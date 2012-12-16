@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :assign_user
+  #before_filter :assign_user
   #before_filter :require_login
 
   #Get user info
@@ -16,6 +16,8 @@ class ApplicationController < ActionController::Base
     @_current_user ||= session[:current_user_id]&&
         User.find(session[:current_user_id])
   end
+
+  helper_method :current_user
 
   def require_login
     unless logged_in?

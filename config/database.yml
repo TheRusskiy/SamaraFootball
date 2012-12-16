@@ -32,3 +32,10 @@ development:
   pool: 5
   username: postgres
   password: wordpass
+
+#development:
+#  adapter: postgresql
+#  database: <name of your database>
+#  username: <user name to log on to your postgres db say:  postgres >
+#  password: <password>
+#  host: <give the IP address of your remote database.  eg. 192.168.1.1 >
