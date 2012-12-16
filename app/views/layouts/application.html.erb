@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <title>SamaraFootball</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<header>
+  <% if @_current_user.nil? %>
+      <!--Log In-->
+      <div id="login_form_div">
+      <form accept-charset="UTF-8" action="<%=login_form_path%>" method="get">
+      <button id="login_button" type="submit" >Log In</button>
+      </form>
+      </div>
+  <% else %>
+      <div id="login_name_div">
+      <%= @_current_user.login %>
+      </div>
+  <% end %>
+
+  <!--Log Out-->
+  <div id="logout_form_div">
+  <form accept-charset="UTF-8" action="<%=logout_path%>" method="destroy">
+  <button id="logout_button" type="submit" >Log Out</button>
+  </form>
+  </div>
+</header>
+<section>
+
+<% if flash[:notice] %>
+    <div id="notice">
+    <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<% if flash[:warning] %>
+    <div id="warning">
+    <%= flash[:warning] %>
+    </div>
+<% end %>
 
 <%= yield %>
 
-</body>
+</section>
 </html>

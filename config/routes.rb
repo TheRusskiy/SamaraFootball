@@ -1,4 +1,11 @@
 SamaraFootball::Application.routes.draw do
+  root :to => 'users#index'
+  resources :users
+  match '/login/logout' => 'login#destroy', :as => :logout
+  get '/login/auth' => 'login#new', :as => :login_form
+  post '/login/auth' => 'login#create', :as => :login_info
+  #resources :login, :only=>[:new, :create, :destroy]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -47,7 +54,7 @@ SamaraFootball::Application.routes.draw do
   #   end
 
   # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
+  # just remember to delete public/1index.html.
   # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"

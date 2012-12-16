@@ -28,7 +28,7 @@ production:
 development:
   adapter: postgresql
   encoding: utf8
-  database: postgre_development
+  database: football_development
   pool: 5
   username: postgres
   password: wordpass
