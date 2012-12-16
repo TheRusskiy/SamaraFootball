@@ -1,6 +1,14 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :require_login
+  before_filter :assign_user
+  #before_filter :require_login
+
+  #Get user info
+  def assign_user
+    if @_current_user.nil?
+      current_user
+    end
+  end
 
 #  find the user with ID from session
   private

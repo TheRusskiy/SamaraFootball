@@ -1,5 +1,5 @@
 SamaraFootball::Application.routes.draw do
-  root :to => 'users#index'
+  root :to => 'home#index'
   resources :users
   match '/login/logout' => 'login#destroy', :as => :logout
   get '/login/auth' => 'login#new', :as => :login_form

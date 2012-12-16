@@ -1,20 +1,19 @@
-<body>
-    <div id="user_table_div">
-      <table id="user_table">
+
+<div id="user_table_div">
+  <table id="user_table">
+  <tr>
+  <th>Login</th>
+  <th>Password</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  </tr>
+  <% @users.each do |u| %>
       <tr>
-      <th>Login</th>
-      <th>Password</th>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <td class="login_row"><%= u.login %></td>
+      <td class="password_row"><%= u.password %></td>
+      <td class="first_name_row"><%= u.first_name %></td>
+      <td class="last_name_row"><%= u.last_name %></td>
       </tr>
-      <% @users.each do |u| %>
-          <tr>
-          <td class="login_crow"><%= u.login %></td>
-          <td class="password_row"><%= u.password %></td>
-          <td class="first_name_row"><%= u.first_name %></td>
-          <td class="last_name_row"><%= u.last_name %></td>
-          </tr>
-      <% end %>
-       </table>
-     </div>
-</body>
+  <% end %>
+   </table>
+ </div>

@@ -1,0 +1,25 @@
+<div id="update_form">
+  <form accept-charset="UTF-8" action="<%= "/users/"+@user.id.to_s %>" method="post">
+    <label for="update_login_input">User</label>
+    <input id="update_login_input" type="text" name="user[new_login]" value="<%= @user.login %>"/>
+    </br>
+    <label for="update_password_input">Your current password</label>
+    <input id="update_password_input" type="text" disabled="true" readonly="readonly" name="user[password]" value="<%= @user.password %>"/>
+    <br>
+    <label for="update_new_password_input">New password</label>
+    <input id="update_new_password_input" type="text" name="user[new_password]" value="<%= @user.password %>"/>
+    <br>
+    <label for="update_first_name_input">First Name</label>
+    <input id="update_first_name_input" type="text" name="user[first_name]" value="<%= @user.first_name %>"/>
+    <br>
+    <label for="update_last_name_input">Last Name</label>
+    <input id="update_last_name_input" type="text" name="user[last_name]" value="<%= @user.last_name %>"/>
+    <br>
+    <!--HIDDEN-->
+    <input id="current_login_input" type="hidden" name="user[login]" value="<%= @user.login %>"/>
+    <input type="hidden" value="put" name="_method">
+    <input id="old_password" type="hidden" name="user[password]" value="<%= @user.password %>"/>
+    <button type="submit">Update</button>
+  </form>
+
+</div>

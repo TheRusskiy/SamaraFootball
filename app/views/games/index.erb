@@ -1,0 +1,19 @@
+
+<div id="game_table_div">
+  <table id="game_table">
+  <tr>
+  <th>Date</th>
+  <th>Place</th>
+  <th>Price</th>
+  <th>Time</th>
+  </tr>
+  <% @games.each do |u| %>
+      <tr>
+      <td class="date_row"><%= u.date %></td>
+      <td class="place_row"><%= u.place %></td>
+      <td class="price_row"><%= u.price %></td>
+      <td class="time_row"><%= u.time %></td>
+      </tr>
+  <% end %>
+   </table>
+ </div>
