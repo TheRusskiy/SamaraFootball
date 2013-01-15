@@ -6,6 +6,7 @@
   <th>Place</th>
   <th>Price</th>
   <th>Time</th>
+  <th>Players</th>
   <th></th>
   </tr>
   <% index=0; @games.each do |u| %>
@@ -16,6 +17,7 @@
       <td class="place_row"><%= u.place %></td>
       <td class="price_row"><%= u.price %></td>
       <td class="time_row"><%= u.time_string %></td>
+      <td ><%= u.users.count %></td>
       <td class="time_row"><%= link_to "details", game_path(u) %></td>
       </tr>
   <% end %>
