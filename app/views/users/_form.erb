@@ -17,7 +17,15 @@
 <%= f.label "Last Name" %><br />
 <%= f.text_field :last_name,  :placeholder => "e.g. Ishkov", :value => @user.last_name%>
 </div>
+<div class="field">
+<%= f.label "Position" %><br />
+<%= f.text_field :position,  :placeholder => "e.g. goalkeeper", :value => @user.position%>
+</div>
 <div class="actions">
   <%= f.submit :confirm => "Check twice!", :action=>users_path, :method =>"post"%>
 </div>
+    <% if not current_user.nil?  %>
+    <%= f.hidden_field :login, :name=> "login", :value => current_user.login %>
+    <%= f.hidden_field :password, :name=> "password", :value => current_user.password %>
+    <% end %>
 <% end %>
