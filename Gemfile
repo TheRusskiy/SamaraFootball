@@ -4,9 +4,14 @@ gem 'rails', '3.2.11'
 #https://github.com/gregbell/active_admin
 gem 'activeadmin' #rails generate active_admin:install
 gem "meta_search",    '>= 1.1.0.pre'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+#Twitter Bootstrap
+#gem "therubyracer" #no need to intall on windows
+#gem "less-rails"
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git' #rails generate bootstrap:install static
+#rails generate bootstrap:install less #if not windows
 
 
 

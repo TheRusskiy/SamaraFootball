@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
 */
+#home_title {
+        color: orangeRed;
+        font: bold 34px 'Arbutus', cursive;
+        margin: 0px;
+        text-shadow: 40px 20px 8px black, 3px 3px blue;
+    }
