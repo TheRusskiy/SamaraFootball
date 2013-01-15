@@ -1,18 +1,16 @@
-
-<div id="user_info">
-
-    <label for="login_info">Login</label>
-    <input id="login_info" type="text" name="user[login]" readonly="readonly" value="<%=@user.login%>"/>
-    <br>
-
-    <label for="password_info">Password</label>
-    <input id="password_info" type="text" name="user[password]" readonly="readonly" value="<%=@user.password%>"/>
-    <br>
-
-    <label for="first_name_info">First Name</label>
-    <input id="first_name_info" type="text" name="user[first_name]" readonly="readonly" value="<%=@user.first_name%>"/>
-    <br>
-
-    <label for="last_name_info">Last Name</label>
-    <input id="last_name_info" type="text" name="user[last_name]" readonly="readonly" value="<%=@user.last_name%>"/>
-</div>
+<p>
+  <b>Login:</b>
+  <%= @user.login %>
+</p>
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+<p>
+  <b>First Name:</b>
+  <%= @user.first_name %>
+</p>
+<p>
+  <b>Last Name:</b>
+  <%= @user.last_name %>
+</p>

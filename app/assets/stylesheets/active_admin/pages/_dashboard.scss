@@ -1,0 +1,6 @@
+@import "active_admin/mixins";
+table.dashboard {
+  width: 100%; 
+  td { border-bottom: none; }
+  .dashboard_section { @include section; }
+}

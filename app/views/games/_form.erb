@@ -1,0 +1,27 @@
+
+<%= form_for(@game) do |f| %>
+
+<div class="field">
+  <%= f.label :date %><br />
+  <%= f.date_select :date, :discard_year=> true, :value => @game.date %>
+</div>
+<div class="field">
+  <%= f.label :place %><br />
+  <%= f.text_field :place, :placeholder => "e.g. Торпедо" ,:value => @game.place%>
+</div>
+<div class="field">
+<%= f.label :price %><br />
+<%= f.number_field :price, :min => 0, :max => 10000, :value => 0, :step =>100, :value => @game.price||0%>
+</div>
+<div class="field">
+<%= f.label :time %><br />
+<%= f.time_select :time, :value => @game.time%>
+</div>
+<div class="actions">
+  <%= f.submit :confirm => "Check twice!", :action=>games_path, :method =>"post"%>
+</div>
+    <%= f.hidden_field :login, :name=> "user[login]", :value => current_user.login %>
+    <%= f.hidden_field :password, :name=> "user[password]", :value => current_user.password %>
+<% end %>
+
+<!--<script>$("#new_game_date_input").mask("99/99/9999")</script>-->

@@ -1,0 +1,1 @@
+mklink /H f:\rsf "c:\Users\TheRusskiy\RoR\SamaraFootball"

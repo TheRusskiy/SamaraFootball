@@ -1,0 +1,23 @@
+
+<%= form_for(@user) do |f| %>
+
+<div class="field">
+  <%= f.label :login %><br />
+  <%= f.text_field :login, :placeholder => "e.g. MyLogin69", :value => @user.login%>
+</div>
+<div class="field">
+  <%= f.label :password %><br />
+  <%= f.text_field :password, :type => :password, :placeholder => "your password" ,:value => @user.password%>
+</div>
+<div class="field">
+<%= f.label "First Name" %><br />
+<%= f.text_field :first_name,  :placeholder => "e.g. Dmitry", :value => @user.first_name%>
+</div>
+<div class="field">
+<%= f.label "Last Name" %><br />
+<%= f.text_field :last_name,  :placeholder => "e.g. Ishkov", :value => @user.last_name%>
+</div>
+<div class="actions">
+  <%= f.submit :confirm => "Check twice!", :action=>users_path, :method =>"post"%>
+</div>
+<% end %>

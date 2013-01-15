@@ -1,6 +1,15 @@
 SamaraFootball::Application.routes.draw do
+
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'home#index'
+  delete 'games/:game_id/register/:user_id' => 'games#unregister_from_a_game'
+  post 'games/:game_id/register/:user_id' => 'games#register_for_a_game'
   resources :users
+  resources :games
   match '/login/logout' => 'login#destroy', :as => :logout
   get '/login/auth' => 'login#new', :as => :login_form
   post '/login/auth' => 'login#create', :as => :login_info

@@ -1,0 +1,5 @@
+# spec/fixtures/games.yml
+torpedo_game:
+  id: 1
+  place: Torpedo
+  price: 1150

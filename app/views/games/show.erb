@@ -1,0 +1,23 @@
+<div id="game_show_form">
+  <%= render 'info' %>
+  <%= render 'game_users' %>
+  <!--REGISTER FOR A GAME BUTTON:-->
+  <% if can_register?(@game, current_user)%>
+  <%= form_tag(register_for_a_game_path(@game.id, current_user.id), :method => 'post') do%>
+    <%= hidden_field(:user, :login, :value => current_user.login) %>
+    <%= hidden_field(:user, :password, :value => current_user.password) %>
+    <%= submit_tag 'Register' %>
+    </form>
+  <% end %>
+  <% end %>
+  <!--UNREGISTER FOR A GAME BUTTON:-->
+  <% if can_unregister?(@game, current_user)%>
+  <%= form_tag(unregister_from_a_game_path(@game.id, current_user.id), :method => 'delete') do%>
+    <%= hidden_field(:user, :login, :value => current_user.login) %>
+    <%= hidden_field(:user, :password, :value => current_user.password) %>
+    <%= submit_tag 'Unregister' %>
+    </form>
+  <% end %>
+  <% end %>
+
+</div>

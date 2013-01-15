@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+games = [{:place => 'Torpedo', :price => '1000'},
+    	  {:place => 'CSKA', :price => '2000'},
+    	  {:place => 'Dvorec', :price => '3000'},
+      	  {:place => 'Dvor', :price => '0'},
+  	 ]
+
+games.each do |game|
+  Game.create!(game)
+end

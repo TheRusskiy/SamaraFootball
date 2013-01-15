@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def new
   #just go render "New" template...
+    @user=User.new
   end
 
   def create
@@ -76,4 +77,5 @@ class UsersController < ApplicationController
       end
     end
   end
+
 end
