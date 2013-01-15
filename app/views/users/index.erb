@@ -1,18 +1,21 @@
-
 <div id="user_table_div">
-  <table id="user_table">
+  <table id="user_table" class="table table-striped table-hover pull-left table-bordered">
   <tr>
+  <th>№</th>
   <th>Login</th>
-  <th>Password</th>
+  <!-- <th>Password</th> -->
   <th>First Name</th>
   <th>Last Name</th>
   </tr>
-  <% @users.each do |u| %>
+  <% index=0; @users.each do |u| %>
+      <%  index=index+1 %>
       <tr>
+      <td><%= index %></td>
       <td class="login_row"><%= u.login %></td>
-      <td class="password_row"><%= u.password %></td>
+      <!-- <td class="password_row"><%= u.password %></td> -->
       <td class="first_name_row"><%= u.first_name %></td>
       <td class="last_name_row"><%= u.last_name %></td>
+      <td class="time_row"><%= link_to "details", user_path(u) %></td>
       </tr>
   <% end %>
    </table>

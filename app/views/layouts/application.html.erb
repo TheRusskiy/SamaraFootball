@@ -55,7 +55,15 @@
                 </li>
               </ul>
               <ul class="nav pull-right">
-              <% if current_user.nil? %>                  
+              <% if current_user.nil? %>  
+                   <!--Register-->
+                  <li>
+                  <form class="navbar-form" accept-charset="UTF-8" action="<%=new_user_path%>" method="get">
+                  <button type="submit" class="btn">Register</button>
+                  </form>
+                  </li>
+
+
                   <!--Log In-->
                   <li>
                   <form class="navbar-form" accept-charset="UTF-8" action="<%=login_form_path%>" method="get">
@@ -65,13 +73,13 @@
                   </li>
 
               <% else %>
+              <!-- Current user profile -->
                   <li>  
                     <form class="navbar-form" accept-charset="UTF-8" action="<%=user_path(current_user)%>" method="get">
-                    <!-- <input type="text" class="span2"> -->
                     <button type="submit" class="btn"><%= current_user.login %>  </button>
                     </form>                            
                   </li>
-
+              <!-- Log Out -->
                   <li>
                   <form class="navbar-form" accept-charset="UTF-8" action="<%=logout_path%>" method="destroy">
                   <button type="submit" class="btn">Log Out</button>
