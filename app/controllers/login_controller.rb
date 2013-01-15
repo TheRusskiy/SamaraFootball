@@ -10,7 +10,7 @@ class LoginController < ApplicationController
   def create
     if user=User.authenticate(params[:username], params[:password])
       session[:current_user_id]=user.id
-      flash[:notice]="You logged in!"
+      flash[:notice]="Welcome!"
       redirect_to root_path
     else
       flash[:warning]="Wrong Credentials!"

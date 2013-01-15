@@ -7,12 +7,6 @@ gem "meta_search",    '>= 1.1.0.pre'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#Twitter Bootstrap
-#gem "therubyracer" #no need to intall on windows
-#gem "less-rails"
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git' #rails generate bootstrap:install static
-#rails generate bootstrap:install less #if not windows
-
 
 
 group :test do
@@ -61,6 +55,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+#Twitter Bootstrap
+#gem "therubyracer" #no need to intall on windows
+#gem "less-rails"
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git' #rails generate bootstrap:install static
+#rails generate bootstrap:install less #if not windows
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

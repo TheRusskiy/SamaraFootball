@@ -10,8 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
+///= require jquery
+///= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
 
@@ -21,3 +21,9 @@
 	Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
 	Version: 1.3
 */
+
+function fadeNotice(){
+	$.each($('.notice'), function(index, value) {
+	  $(value).fadeOut();
+	});
+}

@@ -18,7 +18,7 @@
 <%= f.time_select :time, :value => @game.time%>
 </div>
 <div class="actions">
-  <%= f.submit :confirm => "Check twice!", :action=>games_path, :method =>"post"%>
+  <%= f.submit :confirm => "Check twice!", :action=>games_path, :method =>"post", :class => 'btn btn-success'%>
 </div>
     <%= f.hidden_field :login, :name=> "user[login]", :value => current_user.login %>
     <%= f.hidden_field :password, :name=> "user[password]", :value => current_user.password %>
