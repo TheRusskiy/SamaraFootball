@@ -31,6 +31,15 @@ class GamesController < ApplicationController
        return
      end
 
+    if current_user.nil?
+      flash[:warning]="You must be logged in to create games!"
+      redirect_to login_form_path
+      return
+    else
+     @game[:creator]=current_user.id
+    end
+
+
      if @game.save
        flash[:notice]=@game.to_s+" was created!"
        redirect_to game_path(@game.id)
@@ -48,22 +57,27 @@ class GamesController < ApplicationController
 
 
    def edit
-     if (not current_user.nil?)
      @game = Game.find(params[:id])
-     else
-       flash[:warning]="You have to log in!"
+     if (current_user.nil? or current_user.id!=@game.creator)
+       flash[:warning]="Only creator can edit games!"
        redirect_to root_path
+       return
      end
    end
 
    def destroy
       @game=Game.find(params[:id])
+      if (current_user.nil? or current_user.id!=@game.creator)
+       flash[:warning]="Only creator can delete games!"
+       redirect_to root_path
+       return
+     end
       if @game.delete
         flash[:notice]=@game.to_s+" was deleted!"
       else
         flash[:warning]=@game.errors.full_messages
      end
-     render :nothing => true
+     redirect_to games_path
    end
 
    def update

@@ -11,7 +11,7 @@
     </form>
   <% end %>
   <% end %>
-  <!--UNREGISTER FOR A GAME BUTTON:-->
+  <!--UNREGISTER FROM A GAME BUTTON:-->
   <% if can_unregister?(@game, current_user)%>
   <%= form_tag(unregister_from_a_game_path(@game.id, current_user.id), :method => 'delete') do%>
     <%= hidden_field(:user, :login, :value => current_user.login) %>
@@ -19,6 +19,28 @@
     <%= submit_tag 'Unregister', :class => "btn btn-danger" %>
     </form>
   <% end %>
+  <% end %>
+  <!-- Only creator can edit and delete -->
+  <% if current_user.id==@game.creator  %>
+
+    <ul class="nav pull-left">
+
+    <!-- Edit -->
+    <%= form_tag(edit_game_path(@game), :method => 'get') do%>
+      <%= hidden_field(:user, :login, :value => current_user.login) %>
+      <%= hidden_field(:user, :password, :value => current_user.password) %>
+      <%= submit_tag 'Edit', :class => "btn btn-warning" %>
+      </form>
+    <% end %>
+
+    <!-- Delete -->
+    <%= form_tag(game_path(@game), :method => 'delete') do%>
+      <%= hidden_field(:user, :login, :value => current_user.login) %>
+      <%= hidden_field(:user, :password, :value => current_user.password) %>
+      <%= submit_tag 'Delete', :class => "btn btn-danger" %>
+      </form>
+    <% end %>
+
   <% end %>
 
 </div>
