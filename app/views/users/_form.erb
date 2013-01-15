@@ -22,7 +22,7 @@
 <%= f.text_field :position,  :placeholder => "e.g. goalkeeper", :value => @user.position%>
 </div>
 <div class="actions">
-  <%= f.submit :confirm => "Check twice!", :action=>users_path, :method =>"post"%>
+  <%= f.submit "Submit", :confirm => "Check twice!", :action=>users_path, :method =>"post", :class => 'btn btn-primary'%>
 </div>
     <% if not current_user.nil?  %>
     <%= f.hidden_field :login, :name=> "login", :value => current_user.login %>

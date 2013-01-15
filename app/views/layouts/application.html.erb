@@ -69,7 +69,7 @@
               <% else %>
               <!-- Current user profile -->
                   <li>  
-                    <form class="navbar-form" accept-charset="UTF-8" action="<%=user_path(current_user)%>" method="get">
+                    <form class="navbar-form" accept-charset="UTF-8" action="<%=edit_user_path(current_user)%>" method="get">
                     <button type="submit" class="btn"><%= current_user.login %>  </button>
                     </form>                            
                   </li>
