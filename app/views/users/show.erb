@@ -1,17 +1,9 @@
-<%= link_to("All users", users_path) %>
-<p>
-  <b>Login:</b>
-  <%= @user.login %>
-</p>
-<!-- <p>
-  <b>Password:</b>
-  <%= @user.password %>
-</p> -->
-<p>
-  <b>First Name:</b>
-  <%= @user.first_name %>
-</p>
-<p>
-  <b>Last Name:</b>
-  <%= @user.last_name %>
-</p>
+<a href="<%= users_path %>" class="btn "><i class="icon-white icon-backward"></i> Back to users list</a>
+<dl class="dl-horizontal">
+  <dt>Login:</dt>
+  <dd><%= @user.login %></dd>
+  <dt>First Name:</dt>
+  <dd><%= @user.first_name %></dd>
+  <dt>Last Name:</dt>
+  <dd><%= @user.last_name %></dd>
+</dl>

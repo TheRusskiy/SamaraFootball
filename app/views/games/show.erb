@@ -1,5 +1,5 @@
 <div id="game_show_form">
-  <%= link_to "All games", games_path %>
+  <a href="<%= games_path %>" class="btn "><i class="icon-white icon-backward"></i> Back to game list</a>
   <%= render 'info' %>
   <%= render 'game_users' %>
   <!--REGISTER FOR A GAME BUTTON:-->
@@ -7,7 +7,7 @@
   <%= form_tag(register_for_a_game_path(@game.id, current_user.id), :method => 'post') do%>
     <%= hidden_field(:user, :login, :value => current_user.login) %>
     <%= hidden_field(:user, :password, :value => current_user.password) %>
-    <%= submit_tag 'Register' %>
+    <%= submit_tag 'Register', :class => "btn btn-success" %>
     </form>
   <% end %>
   <% end %>
@@ -16,7 +16,7 @@
   <%= form_tag(unregister_from_a_game_path(@game.id, current_user.id), :method => 'delete') do%>
     <%= hidden_field(:user, :login, :value => current_user.login) %>
     <%= hidden_field(:user, :password, :value => current_user.password) %>
-    <%= submit_tag 'Unregister' %>
+    <%= submit_tag 'Unregister', :class => "btn btn-danger" %>
     </form>
   <% end %>
   <% end %>

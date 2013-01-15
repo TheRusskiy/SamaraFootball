@@ -1,0 +1,27 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+$background: white;
+
+.hero-unit{
+	background-color:$background;
+}
+.navbar-wrapper{
+	background-color:$background;
+}
+th {
+	background-color:$background;
+}
+html {
+	background-color:$background;
+}
+section {
+	background-color:$background;
+}
+#myCarousel {
+	background-color:$background;
+}

@@ -1,17 +1,11 @@
-<p>
-  <b>Date:</b>
-  <%= @game.date %>
-</p>
-<p>
-  <b>Time:</b>
-  <%= @game.time %>
-</p>
-<p>
-  <b>Place:</b>
-  <%= @game.place %>
-</p>
-<p>
-  <b>Price:</b>
-  <%= @game.price %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Date:</dt>
+  <dd><%= @game.date %></dd>
+  <dt>Time:</dt>
+  <dd><%= @game.time %></dd>
+  <dt>Place:</dt>
+  <dd><%= @game.place %></dd>
+  <dt>Price:</dt>
+  <dd><%= @game.price %></dd>
+</dl>
 <!--<script>$("#new_game_date_input").mask("99/99/9999")</script>-->
