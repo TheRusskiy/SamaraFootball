@@ -9,6 +9,9 @@ $background: white;
 
 .hero-unit{
 	background-color:$background;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 .navbar-wrapper{
 	background-color:$background;
@@ -27,10 +30,9 @@ section {
 }
 
 .home_feed {
-	width: 1200px;
-	
+	width: 1200px;	
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:auto;	
 }
 
 .mid-table, .common-text {
