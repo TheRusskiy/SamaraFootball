@@ -21,7 +21,7 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-01-16T17:22:08+04:00">2013-01-16T17:22:08+04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-01-16T22:08:41+04:00">2013-01-16T22:08:41+04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -89,7 +89,7 @@
       <tr>
         <td><a href="#29c3c22ddd49b25bdac76965188e7d44ae85c686" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
         <td class="red">53.33 %</td>
-        <td>37</td>
+        <td>38</td>
         <td>15</td>
         <td>8</td>
         <td>7</td>
@@ -98,7 +98,7 @@
       <tr>
         <td><a href="#55fc3630b9ea5c34065cce028a8b08592f8b0f8a" class="src_link" title="./app/controllers/games_controller.rb">./app/controllers/games_controller.rb</a></td>
         <td class="red">11.2 %</td>
-        <td>210</td>
+        <td>211</td>
         <td>125</td>
         <td>14</td>
         <td>111</td>
@@ -116,7 +116,7 @@
       <tr>
         <td><a href="#2b645819731482b14c1afed607cbae26070d06cf" class="src_link" title="./app/controllers/login_controller.rb">./app/controllers/login_controller.rb</a></td>
         <td class="red">38.46 %</td>
-        <td>26</td>
+        <td>27</td>
         <td>13</td>
         <td>5</td>
         <td>8</td>
@@ -125,7 +125,7 @@
       <tr>
         <td><a href="#73b2ef0869187308e7263d50a7b09806e8bdb7d5" class="src_link" title="./app/controllers/users_controller.rb">./app/controllers/users_controller.rb</a></td>
         <td class="red">12.73 %</td>
-        <td>90</td>
+        <td>91</td>
         <td>55</td>
         <td>7</td>
         <td>48</td>
@@ -1222,9 +1222,22 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>1</pre>
+      </td>
+      <td>
+        <pre># coding: utf-8</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>2</pre>
       </td>
       <td>
         <pre>class ApplicationController &lt; ActionController::Base</pre>
@@ -1237,7 +1250,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>2</pre>
+        <pre>3</pre>
       </td>
       <td>
         <pre>  protect_from_forgery</pre>
@@ -1250,7 +1263,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>3</pre>
+        <pre>4</pre>
       </td>
       <td>
         <pre>  #before_filter :assign_user</pre>
@@ -1263,7 +1276,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>4</pre>
+        <pre>5</pre>
       </td>
       <td>
         <pre>  #before_filter :require_login</pre>
@@ -1276,7 +1289,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>5</pre>
+        <pre>6</pre>
       </td>
       <td>
         <pre></pre>
@@ -1289,7 +1302,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>6</pre>
+        <pre>7</pre>
       </td>
       <td>
         <pre>  #Get user info</pre>
@@ -1302,7 +1315,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>7</pre>
+        <pre>8</pre>
       </td>
       <td>
         <pre>  def assign_user</pre>
@@ -1315,7 +1328,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>8</pre>
+        <pre>9</pre>
       </td>
       <td>
         <pre>    if @_current_user.nil?</pre>
@@ -1328,7 +1341,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>9</pre>
+        <pre>10</pre>
       </td>
       <td>
         <pre>      current_user</pre>
@@ -1341,23 +1354,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>10</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>11</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -1370,7 +1370,7 @@
         <pre>12</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
         
@@ -1383,6 +1383,19 @@
         <pre>13</pre>
       </td>
       <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>14</pre>
+      </td>
+      <td>
         <pre>#  find the user with ID from session</pre>
       </td>
       <td class="hits">
@@ -1393,7 +1406,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>14</pre>
+        <pre>15</pre>
       </td>
       <td>
         <pre>  private</pre>
@@ -1406,7 +1419,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>15</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>  def current_user</pre>
@@ -1419,7 +1432,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>16</pre>
+        <pre>17</pre>
       </td>
       <td>
         <pre>    @_current_user ||= session[:current_user_id]&amp;&amp;</pre>
@@ -1432,7 +1445,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>17</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre>        User.find(session[:current_user_id])</pre>
@@ -1445,7 +1458,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>18</pre>
+        <pre>19</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -1458,7 +1471,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>19</pre>
+        <pre>20</pre>
       </td>
       <td>
         <pre></pre>
@@ -1471,7 +1484,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>20</pre>
+        <pre>21</pre>
       </td>
       <td>
         <pre>  helper_method :current_user</pre>
@@ -1484,7 +1497,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>21</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre></pre>
@@ -1497,7 +1510,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>22</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>  def require_login</pre>
@@ -1510,7 +1523,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>23</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>    unless logged_in?</pre>
@@ -1523,10 +1536,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>24</pre>
+        <pre>25</pre>
       </td>
       <td>
-        <pre>      flash[:warning] = &quot;You must be logged in to access this section&quot;</pre>
+        <pre>      flash[:warning] = &quot;Чтобы получить доступ к этой странице вы должны залогинится!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -1536,7 +1549,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>25</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre>      redirect_to login_form_path # halts request cycle</pre>
@@ -1549,7 +1562,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>26</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -1562,23 +1575,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>27</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>28</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
         
@@ -1591,7 +1591,7 @@
         <pre>29</pre>
       </td>
       <td>
-        <pre>  # The logged_in? method simply returns true if the user is logged</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -1604,7 +1604,7 @@
         <pre>30</pre>
       </td>
       <td>
-        <pre>  # in and false otherwise. It does this by &quot;booleanizing&quot; the</pre>
+        <pre>  # The logged_in? method simply returns true if the user is logged</pre>
       </td>
       <td class="hits">
         
@@ -1617,7 +1617,7 @@
         <pre>31</pre>
       </td>
       <td>
-        <pre>  # current_user method we created previously using a double ! operator.</pre>
+        <pre>  # in and false otherwise. It does this by &quot;booleanizing&quot; the</pre>
       </td>
       <td class="hits">
         
@@ -1630,7 +1630,7 @@
         <pre>32</pre>
       </td>
       <td>
-        <pre>  # Note that this is not common in Ruby and is discouraged unless you</pre>
+        <pre>  # current_user method we created previously using a double ! operator.</pre>
       </td>
       <td class="hits">
         
@@ -1643,6 +1643,19 @@
         <pre>33</pre>
       </td>
       <td>
+        <pre>  # Note that this is not common in Ruby and is discouraged unless you</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>34</pre>
+      </td>
+      <td>
         <pre>  # really mean to convert something into true or false.</pre>
       </td>
       <td class="hits">
@@ -1653,7 +1666,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>34</pre>
+        <pre>35</pre>
       </td>
       <td>
         <pre>  def logged_in?</pre>
@@ -1666,7 +1679,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>35</pre>
+        <pre>36</pre>
       </td>
       <td>
         <pre>    !!current_user</pre>
@@ -1679,7 +1692,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>36</pre>
+        <pre>37</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -1692,7 +1705,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>37</pre>
+        <pre>38</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -1724,9 +1737,22 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>1</pre>
+      </td>
+      <td>
+        <pre># coding: utf-8</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>2</pre>
       </td>
       <td>
         <pre>class GamesController &lt; ApplicationController</pre>
@@ -1739,7 +1765,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>2</pre>
+        <pre>3</pre>
       </td>
       <td>
         <pre>  def index</pre>
@@ -1752,7 +1778,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>3</pre>
+        <pre>4</pre>
       </td>
       <td>
         <pre>    @games = Game.all</pre>
@@ -1765,7 +1791,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>4</pre>
+        <pre>5</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -1778,7 +1804,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>5</pre>
+        <pre>6</pre>
       </td>
       <td>
         <pre>  def new</pre>
@@ -1791,23 +1817,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>6</pre>
-      </td>
-      <td>
-        <pre>    if current_user.nil?</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>7</pre>
       </td>
       <td>
-        <pre>      flash[:warning]=&quot;You must be logged in to create games!&quot;</pre>
+        <pre>    if current_user.nil?</pre>
       </td>
       <td class="hits">
         0
@@ -1820,6 +1833,19 @@
         <pre>8</pre>
       </td>
       <td>
+        <pre>      flash[:warning]=&quot;Чтобы организовывать матчи нужно войти под своим логином!&quot;</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>9</pre>
+      </td>
+      <td>
         <pre>      redirect_to login_form_path</pre>
       </td>
       <td class="hits">
@@ -1830,7 +1856,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>9</pre>
+        <pre>10</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -1843,7 +1869,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>10</pre>
+        <pre>11</pre>
       </td>
       <td>
         <pre>    #  render &quot;NEW&quot; template</pre>
@@ -1856,7 +1882,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>11</pre>
+        <pre>12</pre>
       </td>
       <td>
         <pre>      @game=Game.new</pre>
@@ -1869,23 +1895,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>12</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>13</pre>
       </td>
       <td>
-        <pre>   end</pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -1898,6 +1911,19 @@
         <pre>14</pre>
       </td>
       <td>
+        <pre>   end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>15</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -1908,7 +1934,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>15</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>   def create</pre>
@@ -1921,7 +1947,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>16</pre>
+        <pre>17</pre>
       </td>
       <td>
         <pre>     @game = Game.new(params[:game])</pre>
@@ -1934,7 +1960,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>17</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre>     if @game.price&lt;0</pre>
@@ -1947,23 +1973,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>18</pre>
-      </td>
-      <td>
-        <pre>       flash[:warning]=&quot;Price can't be below zero!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>19</pre>
       </td>
       <td>
-        <pre>       render new_game_path</pre>
+        <pre>       flash[:warning]=&quot;Цена не может быть &lt; 0, спустись на землю!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -1976,6 +1989,19 @@
         <pre>20</pre>
       </td>
       <td>
+        <pre>       render new_game_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>21</pre>
+      </td>
+      <td>
         <pre>       return</pre>
       </td>
       <td class="hits">
@@ -1986,7 +2012,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>21</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -1999,7 +2025,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>22</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>     if @game.place==&quot;&quot; or @game.place.nil?</pre>
@@ -2012,23 +2038,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>23</pre>
-      </td>
-      <td>
-        <pre>       flash[:warning]=&quot;Specify place!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>24</pre>
       </td>
       <td>
-        <pre>       render new_game_path</pre>
+        <pre>       flash[:warning]=&quot;Играть то где будем? Укажи место!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2041,6 +2054,19 @@
         <pre>25</pre>
       </td>
       <td>
+        <pre>       render new_game_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>26</pre>
+      </td>
+      <td>
         <pre>       return</pre>
       </td>
       <td class="hits">
@@ -2051,7 +2077,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>26</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -2064,7 +2090,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>27</pre>
+        <pre>28</pre>
       </td>
       <td>
         <pre></pre>
@@ -2077,7 +2103,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>28</pre>
+        <pre>29</pre>
       </td>
       <td>
         <pre>     if @game.date&lt;Date.today or (@game.date==Date.today&amp;&amp;@game.time&lt;(Time.now.getutc+Time.now.utc_offset))</pre>
@@ -2090,23 +2116,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>29</pre>
-      </td>
-      <td>
-        <pre>       flash[:warning]=&quot;It's gotta be future!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>30</pre>
       </td>
       <td>
-        <pre>       render new_game_path</pre>
+        <pre>       flash[:warning]=&quot;Нельзя создать игру в прошлом!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2119,6 +2132,19 @@
         <pre>31</pre>
       </td>
       <td>
+        <pre>       render new_game_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>32</pre>
+      </td>
+      <td>
         <pre>       return</pre>
       </td>
       <td class="hits">
@@ -2129,7 +2155,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>32</pre>
+        <pre>33</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -2142,7 +2168,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>33</pre>
+        <pre>34</pre>
       </td>
       <td>
         <pre></pre>
@@ -2155,7 +2181,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>34</pre>
+        <pre>35</pre>
       </td>
       <td>
         <pre>    if current_user.nil?</pre>
@@ -2168,23 +2194,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>35</pre>
-      </td>
-      <td>
-        <pre>      flash[:warning]=&quot;You must be logged in to create games!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>36</pre>
       </td>
       <td>
-        <pre>      redirect_to login_form_path</pre>
+        <pre>      flash[:warning]=&quot;Чтобы организовывать матчи нужно войти под своим логином!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2197,6 +2210,19 @@
         <pre>37</pre>
       </td>
       <td>
+        <pre>      redirect_to login_form_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>38</pre>
+      </td>
+      <td>
         <pre>      return</pre>
       </td>
       <td class="hits">
@@ -2207,7 +2233,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>38</pre>
+        <pre>39</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -2220,7 +2246,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>39</pre>
+        <pre>40</pre>
       </td>
       <td>
         <pre>     @game[:creator]=current_user.id</pre>
@@ -2233,23 +2259,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>40</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>41</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -2270,9 +2283,22 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="never" >
       <td class="line_number">
         <pre>43</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>44</pre>
       </td>
       <td>
         <pre>     if @game.save</pre>
@@ -2285,10 +2311,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>44</pre>
+        <pre>45</pre>
       </td>
       <td>
-        <pre>       flash[:notice]=@game.to_s+&quot; was created!&quot;</pre>
+        <pre>       flash[:notice]=@game.to_s+&quot; была создана!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2298,7 +2324,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>45</pre>
+        <pre>46</pre>
       </td>
       <td>
         <pre>       redirect_to game_path(@game.id)</pre>
@@ -2311,7 +2337,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>46</pre>
+        <pre>47</pre>
       </td>
       <td>
         <pre>     else</pre>
@@ -2324,7 +2350,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>47</pre>
+        <pre>48</pre>
       </td>
       <td>
         <pre>       flash[:warning]=@game.errors.full_messages</pre>
@@ -2337,7 +2363,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>48</pre>
+        <pre>49</pre>
       </td>
       <td>
         <pre>       render new_game_path</pre>
@@ -2350,7 +2376,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>49</pre>
+        <pre>50</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -2363,23 +2389,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>50</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>51</pre>
       </td>
       <td>
-        <pre>   end</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -2392,6 +2405,19 @@
         <pre>52</pre>
       </td>
       <td>
+        <pre>   end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>53</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -2402,7 +2428,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>53</pre>
+        <pre>54</pre>
       </td>
       <td>
         <pre>   def show</pre>
@@ -2415,7 +2441,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>54</pre>
+        <pre>55</pre>
       </td>
       <td>
         <pre>     @game = Game.find(params[:id])</pre>
@@ -2428,7 +2454,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>55</pre>
+        <pre>56</pre>
       </td>
       <td>
         <pre>     @users=@game.users</pre>
@@ -2441,23 +2467,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>56</pre>
-      </td>
-      <td>
-        <pre>   end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>57</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>   end</pre>
       </td>
       <td class="hits">
         
@@ -2478,9 +2491,22 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>59</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>60</pre>
       </td>
       <td>
         <pre>   def edit</pre>
@@ -2493,7 +2519,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>60</pre>
+        <pre>61</pre>
       </td>
       <td>
         <pre>     @game = Game.find(params[:id])</pre>
@@ -2506,7 +2532,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>61</pre>
+        <pre>62</pre>
       </td>
       <td>
         <pre>     if (current_user.nil? or current_user.id!=@game.creator)</pre>
@@ -2519,10 +2545,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>62</pre>
+        <pre>63</pre>
       </td>
       <td>
-        <pre>       flash[:warning]=&quot;Only creator can edit games!&quot;</pre>
+        <pre>       flash[:warning]=&quot;Только организатор может редактировать матч!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2532,7 +2558,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>63</pre>
+        <pre>64</pre>
       </td>
       <td>
         <pre>       redirect_to root_path</pre>
@@ -2545,23 +2571,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>64</pre>
-      </td>
-      <td>
-        <pre>       return</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>65</pre>
       </td>
       <td>
-        <pre>     end</pre>
+        <pre>       return</pre>
       </td>
       <td class="hits">
         
@@ -2574,7 +2587,7 @@
         <pre>66</pre>
       </td>
       <td>
-        <pre>   end</pre>
+        <pre>     end</pre>
       </td>
       <td class="hits">
         
@@ -2587,6 +2600,19 @@
         <pre>67</pre>
       </td>
       <td>
+        <pre>   end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>68</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -2597,7 +2623,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>68</pre>
+        <pre>69</pre>
       </td>
       <td>
         <pre>   def destroy</pre>
@@ -2610,7 +2636,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>69</pre>
+        <pre>70</pre>
       </td>
       <td>
         <pre>      @game=Game.find(params[:id])</pre>
@@ -2623,7 +2649,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>70</pre>
+        <pre>71</pre>
       </td>
       <td>
         <pre>      if (current_user.nil? or current_user.id!=@game.creator)</pre>
@@ -2636,23 +2662,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>71</pre>
-      </td>
-      <td>
-        <pre>       flash[:warning]=&quot;Only creator can delete games!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>72</pre>
       </td>
       <td>
-        <pre>       redirect_to root_path</pre>
+        <pre>       flash[:warning]=&quot;Только организатор может отменить матч!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2665,6 +2678,19 @@
         <pre>73</pre>
       </td>
       <td>
+        <pre>       redirect_to root_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>74</pre>
+      </td>
+      <td>
         <pre>       return</pre>
       </td>
       <td class="hits">
@@ -2675,7 +2701,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>74</pre>
+        <pre>75</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -2688,7 +2714,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>75</pre>
+        <pre>76</pre>
       </td>
       <td>
         <pre>      if @game.delete</pre>
@@ -2701,10 +2727,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>76</pre>
+        <pre>77</pre>
       </td>
       <td>
-        <pre>        flash[:notice]=@game.to_s+&quot; was deleted!&quot;</pre>
+        <pre>        flash[:notice]=@game.to_s+&quot; удалена!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2714,7 +2740,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>77</pre>
+        <pre>78</pre>
       </td>
       <td>
         <pre>      else</pre>
@@ -2727,7 +2753,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>78</pre>
+        <pre>79</pre>
       </td>
       <td>
         <pre>        flash[:warning]=@game.errors.full_messages</pre>
@@ -2740,7 +2766,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>79</pre>
+        <pre>80</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -2753,7 +2779,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>80</pre>
+        <pre>81</pre>
       </td>
       <td>
         <pre>     redirect_to games_path</pre>
@@ -2766,7 +2792,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>81</pre>
+        <pre>82</pre>
       </td>
       <td>
         <pre>   end</pre>
@@ -2779,7 +2805,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>82</pre>
+        <pre>83</pre>
       </td>
       <td>
         <pre></pre>
@@ -2792,7 +2818,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>83</pre>
+        <pre>84</pre>
       </td>
       <td>
         <pre>   def update</pre>
@@ -2805,7 +2831,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>84</pre>
+        <pre>85</pre>
       </td>
       <td>
         <pre>     #Is password right?</pre>
@@ -2818,7 +2844,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>85</pre>
+        <pre>86</pre>
       </td>
       <td>
         <pre>     #This check is needed in order to prevent malicious calls from outside a browser</pre>
@@ -2831,7 +2857,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>86</pre>
+        <pre>87</pre>
       </td>
       <td>
         <pre>     user = User.authenticate(params[:user][:login],params[:user][:password])</pre>
@@ -2844,7 +2870,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>87</pre>
+        <pre>88</pre>
       </td>
       <td>
         <pre>     if user.nil?</pre>
@@ -2857,10 +2883,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>88</pre>
+        <pre>89</pre>
       </td>
       <td>
-        <pre>       flash[:warning]=&quot;Wrong credentials! Stop messing with my program!&quot;</pre>
+        <pre>       flash[:warning]=&quot;Неправильные логин/пароль, прекрати насиловать программу!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -2870,7 +2896,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>89</pre>
+        <pre>90</pre>
       </td>
       <td>
         <pre>       redirect_to root_path</pre>
@@ -2883,7 +2909,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>90</pre>
+        <pre>91</pre>
       </td>
       <td>
         <pre>     else</pre>
@@ -2896,7 +2922,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>91</pre>
+        <pre>92</pre>
       </td>
       <td>
         <pre>       @old_game = Game.find(params[:id])</pre>
@@ -2909,7 +2935,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>92</pre>
+        <pre>93</pre>
       </td>
       <td>
         <pre>       @game=Game.new(params[:game])</pre>
@@ -2922,7 +2948,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>93</pre>
+        <pre>94</pre>
       </td>
       <td>
         <pre>       @game.time=@game.time.change(:year =&gt; Time.now.year, :month =&gt; Time.now.month, :day =&gt; Time.now.day)</pre>
@@ -2935,7 +2961,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>94</pre>
+        <pre>95</pre>
       </td>
       <td>
         <pre></pre>
@@ -2948,7 +2974,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>95</pre>
+        <pre>96</pre>
       </td>
       <td>
         <pre>        #VALIDATIONS:</pre>
@@ -2961,7 +2987,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>96</pre>
+        <pre>97</pre>
       </td>
       <td>
         <pre>        if @game.price&lt;0</pre>
@@ -2974,23 +3000,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>97</pre>
-      </td>
-      <td>
-        <pre>          flash[:warning]=&quot;Price can't be below zero!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>98</pre>
       </td>
       <td>
-        <pre>          redirect_to edit_game_path(params[:id])</pre>
+        <pre>          flash[:warning]=&quot;Цена не может быть &lt; 0, спустись на землю!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3003,6 +3016,19 @@
         <pre>99</pre>
       </td>
       <td>
+        <pre>          redirect_to edit_game_path(params[:id])</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>100</pre>
+      </td>
+      <td>
         <pre>          return</pre>
       </td>
       <td class="hits">
@@ -3013,7 +3039,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>100</pre>
+        <pre>101</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -3026,7 +3052,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>101</pre>
+        <pre>102</pre>
       </td>
       <td>
         <pre>        if @game.place==&quot;&quot; or @game.place.nil?</pre>
@@ -3039,23 +3065,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>102</pre>
-      </td>
-      <td>
-        <pre>          flash[:warning]=&quot;Specify place!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>103</pre>
       </td>
       <td>
-        <pre>          redirect_to edit_game_path(params[:id])</pre>
+        <pre>          flash[:warning]=&quot;Играть то где будем? Укажи место!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3068,6 +3081,19 @@
         <pre>104</pre>
       </td>
       <td>
+        <pre>          redirect_to edit_game_path(params[:id])</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>105</pre>
+      </td>
+      <td>
         <pre>          return</pre>
       </td>
       <td class="hits">
@@ -3078,7 +3104,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>105</pre>
+        <pre>106</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -3091,7 +3117,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>106</pre>
+        <pre>107</pre>
       </td>
       <td>
         <pre></pre>
@@ -3104,7 +3130,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>107</pre>
+        <pre>108</pre>
       </td>
       <td>
         <pre>        if @game.date&lt;Date.today or (@game.date==Date.today&amp;&amp;@game.time&lt;(Time.now.getutc+Time.now.utc_offset))</pre>
@@ -3117,23 +3143,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>108</pre>
-      </td>
-      <td>
-        <pre>          flash[:warning]=&quot;It's gotta be future!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>109</pre>
       </td>
       <td>
-        <pre>          redirect_to edit_game_path(params[:id])</pre>
+        <pre>          flash[:warning]=&quot;Нельзя создать игру в прошлом!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3146,6 +3159,19 @@
         <pre>110</pre>
       </td>
       <td>
+        <pre>          redirect_to edit_game_path(params[:id])</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>111</pre>
+      </td>
+      <td>
         <pre>          return</pre>
       </td>
       <td class="hits">
@@ -3156,23 +3182,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>111</pre>
-      </td>
-      <td>
-        <pre>        end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>112</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>        end</pre>
       </td>
       <td class="hits">
         
@@ -3193,9 +3206,22 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="never" >
       <td class="line_number">
         <pre>114</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>115</pre>
       </td>
       <td>
         <pre>       if @old_game.update_attributes(params[:game])</pre>
@@ -3208,10 +3234,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>115</pre>
+        <pre>116</pre>
       </td>
       <td>
-        <pre>         flash[:notice]=@game.to_s+&quot; was updated!&quot;</pre>
+        <pre>         flash[:notice]=@game.to_s+&quot; была отредактирована!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3221,7 +3247,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>116</pre>
+        <pre>117</pre>
       </td>
       <td>
         <pre>         redirect_to game_path(@old_game.id)</pre>
@@ -3234,7 +3260,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>117</pre>
+        <pre>118</pre>
       </td>
       <td>
         <pre>       else</pre>
@@ -3247,7 +3273,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>118</pre>
+        <pre>119</pre>
       </td>
       <td>
         <pre>         flash[:warning]=@game.errors.full_messages</pre>
@@ -3260,7 +3286,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>119</pre>
+        <pre>120</pre>
       </td>
       <td>
         <pre>         redirect_to edit_game_path(@old_game.id)</pre>
@@ -3273,7 +3299,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>120</pre>
+        <pre>121</pre>
       </td>
       <td>
         <pre>       end</pre>
@@ -3286,7 +3312,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>121</pre>
+        <pre>122</pre>
       </td>
       <td>
         <pre>     end</pre>
@@ -3299,7 +3325,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>122</pre>
+        <pre>123</pre>
       </td>
       <td>
         <pre>   end</pre>
@@ -3312,7 +3338,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>123</pre>
+        <pre>124</pre>
       </td>
       <td>
         <pre></pre>
@@ -3325,7 +3351,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>124</pre>
+        <pre>125</pre>
       </td>
       <td>
         <pre>  def register_for_a_game</pre>
@@ -3338,23 +3364,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>125</pre>
-      </td>
-      <td>
-        <pre>    @user = User.find(params[:user_id])</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>126</pre>
       </td>
       <td>
-        <pre>    user = User.authenticate(params[:user][:login],params[:user][:password])</pre>
+        <pre>    @user = User.find(params[:user_id])</pre>
       </td>
       <td class="hits">
         0
@@ -3367,7 +3380,7 @@
         <pre>127</pre>
       </td>
       <td>
-        <pre>        if user.nil? or user.id != @user.id</pre>
+        <pre>    user = User.authenticate(params[:user][:login],params[:user][:password])</pre>
       </td>
       <td class="hits">
         0
@@ -3380,7 +3393,7 @@
         <pre>128</pre>
       </td>
       <td>
-        <pre>          flash[:warning]=&quot;Wrong credentials! Stop messing with my program!&quot;</pre>
+        <pre>        if user.nil? or user.id != @user.id</pre>
       </td>
       <td class="hits">
         0
@@ -3393,6 +3406,19 @@
         <pre>129</pre>
       </td>
       <td>
+        <pre>          flash[:warning]=&quot;Неправильные логин/пароль, прекрати насиловать программу!&quot;</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>130</pre>
+      </td>
+      <td>
         <pre>          redirect_to root_path</pre>
       </td>
       <td class="hits">
@@ -3403,7 +3429,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>130</pre>
+        <pre>131</pre>
       </td>
       <td>
         <pre>        else</pre>
@@ -3416,7 +3442,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>131</pre>
+        <pre>132</pre>
       </td>
       <td>
         <pre></pre>
@@ -3429,7 +3455,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>132</pre>
+        <pre>133</pre>
       </td>
       <td>
         <pre>        @game = Game.find(params[:game_id])</pre>
@@ -3442,7 +3468,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>133</pre>
+        <pre>134</pre>
       </td>
       <td>
         <pre></pre>
@@ -3455,7 +3481,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>134</pre>
+        <pre>135</pre>
       </td>
       <td>
         <pre>        if not can_register?(@game, @user)</pre>
@@ -3468,23 +3494,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>135</pre>
-      </td>
-      <td>
-        <pre>          flash[:warning]=&quot;You can't register another user!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>136</pre>
       </td>
       <td>
-        <pre>          redirect_to root_path</pre>
+        <pre>          flash[:warning]=&quot;Вы не можете зарегистрировать другого другого игрока&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3497,6 +3510,19 @@
         <pre>137</pre>
       </td>
       <td>
+        <pre>          redirect_to root_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>138</pre>
+      </td>
+      <td>
         <pre>          return</pre>
       </td>
       <td class="hits">
@@ -3507,7 +3533,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>138</pre>
+        <pre>139</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -3520,7 +3546,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>139</pre>
+        <pre>140</pre>
       </td>
       <td>
         <pre></pre>
@@ -3533,7 +3559,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>140</pre>
+        <pre>141</pre>
       </td>
       <td>
         <pre>        @game.users &lt;&lt; @user</pre>
@@ -3546,23 +3572,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>141</pre>
-      </td>
-      <td>
-        <pre>        if @game.save!</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>142</pre>
       </td>
       <td>
-        <pre>          flash[:notice]=&quot;Do come!&quot;</pre>
+        <pre>        if @game.save!</pre>
       </td>
       <td class="hits">
         0
@@ -3575,6 +3588,19 @@
         <pre>143</pre>
       </td>
       <td>
+        <pre>          flash[:notice]=&quot;Приходи, ждём!&quot;</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>144</pre>
+      </td>
+      <td>
         <pre>          redirect_to game_path(@game.id)</pre>
       </td>
       <td class="hits">
@@ -3585,7 +3611,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>144</pre>
+        <pre>145</pre>
       </td>
       <td>
         <pre>        else</pre>
@@ -3598,10 +3624,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>145</pre>
+        <pre>146</pre>
       </td>
       <td>
-        <pre>          flash[:warning]=&quot;Some error occurred!&quot;</pre>
+        <pre>          flash[:warning]=&quot;Ошибко О_о!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3611,7 +3637,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>146</pre>
+        <pre>147</pre>
       </td>
       <td>
         <pre>          redirect_to game_path(@game.id)</pre>
@@ -3624,23 +3650,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>147</pre>
-      </td>
-      <td>
-        <pre>        end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>148</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>        end</pre>
       </td>
       <td class="hits">
         
@@ -3653,7 +3666,7 @@
         <pre>149</pre>
       </td>
       <td>
-        <pre>        end</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -3666,7 +3679,7 @@
         <pre>150</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>        end</pre>
       </td>
       <td class="hits">
         
@@ -3679,6 +3692,19 @@
         <pre>151</pre>
       </td>
       <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>152</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -3689,7 +3715,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>152</pre>
+        <pre>153</pre>
       </td>
       <td>
         <pre>  def unregister_from_a_game</pre>
@@ -3702,7 +3728,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>153</pre>
+        <pre>154</pre>
       </td>
       <td>
         <pre>    @user = User.find(params[:user_id])</pre>
@@ -3715,7 +3741,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>154</pre>
+        <pre>155</pre>
       </td>
       <td>
         <pre>    user = User.authenticate(params[:user][:login],params[:user][:password])</pre>
@@ -3728,7 +3754,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>155</pre>
+        <pre>156</pre>
       </td>
       <td>
         <pre>        if user.nil? or user.id != @user.id</pre>
@@ -3741,10 +3767,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>156</pre>
+        <pre>157</pre>
       </td>
       <td>
-        <pre>          flash[:warning]=&quot;Wrong credentials! Stop messing with my program!&quot;</pre>
+        <pre>          flash[:warning]=&quot;Неправильные логин/пароль, прекрати насиловать программу!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3754,7 +3780,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>157</pre>
+        <pre>158</pre>
       </td>
       <td>
         <pre>          redirect_to root_path</pre>
@@ -3767,7 +3793,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>158</pre>
+        <pre>159</pre>
       </td>
       <td>
         <pre>        else</pre>
@@ -3780,7 +3806,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>159</pre>
+        <pre>160</pre>
       </td>
       <td>
         <pre></pre>
@@ -3793,7 +3819,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>160</pre>
+        <pre>161</pre>
       </td>
       <td>
         <pre>        @game = Game.find(params[:game_id])</pre>
@@ -3806,7 +3832,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>161</pre>
+        <pre>162</pre>
       </td>
       <td>
         <pre>        if not can_unregister?(@game, @user)</pre>
@@ -3819,23 +3845,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>162</pre>
-      </td>
-      <td>
-        <pre>          flash[:warning]=&quot;You can't unregister another user!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>163</pre>
       </td>
       <td>
-        <pre>          redirect_to root_path</pre>
+        <pre>          flash[:warning]=&quot;Вы не можете зарегистрировать другого другого игрока&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3848,6 +3861,19 @@
         <pre>164</pre>
       </td>
       <td>
+        <pre>          redirect_to root_path</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>165</pre>
+      </td>
+      <td>
         <pre>          return</pre>
       </td>
       <td class="hits">
@@ -3858,7 +3884,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>165</pre>
+        <pre>166</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -3871,7 +3897,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>166</pre>
+        <pre>167</pre>
       </td>
       <td>
         <pre></pre>
@@ -3884,7 +3910,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>167</pre>
+        <pre>168</pre>
       </td>
       <td>
         <pre>        @game.users.delete(@user)</pre>
@@ -3897,7 +3923,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>168</pre>
+        <pre>169</pre>
       </td>
       <td>
         <pre>        if @game.save!</pre>
@@ -3910,10 +3936,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>169</pre>
+        <pre>170</pre>
       </td>
       <td>
-        <pre>          flash[:notice]=&quot;Fuck you then!&quot;</pre>
+        <pre>          flash[:notice]=&quot;Не особо тебя и ждали...&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3923,7 +3949,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>170</pre>
+        <pre>171</pre>
       </td>
       <td>
         <pre>          redirect_to game_path(@game.id)</pre>
@@ -3936,7 +3962,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>171</pre>
+        <pre>172</pre>
       </td>
       <td>
         <pre>        else</pre>
@@ -3949,10 +3975,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>172</pre>
+        <pre>173</pre>
       </td>
       <td>
-        <pre>          flash[:warning]=&quot;Some error occurred!&quot;</pre>
+        <pre>          flash[:warning]=&quot;Ошибко О_о&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -3962,7 +3988,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>173</pre>
+        <pre>174</pre>
       </td>
       <td>
         <pre>          redirect_to game_path(@game.id)</pre>
@@ -3975,23 +4001,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>174</pre>
-      </td>
-      <td>
-        <pre>        end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>175</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>        end</pre>
       </td>
       <td class="hits">
         
@@ -4004,7 +4017,7 @@
         <pre>176</pre>
       </td>
       <td>
-        <pre>        end</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -4017,7 +4030,7 @@
         <pre>177</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>        end</pre>
       </td>
       <td class="hits">
         
@@ -4030,6 +4043,19 @@
         <pre>178</pre>
       </td>
       <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>179</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -4040,7 +4066,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>179</pre>
+        <pre>180</pre>
       </td>
       <td>
         <pre>  def can_register?(game, user)</pre>
@@ -4053,7 +4079,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>180</pre>
+        <pre>181</pre>
       </td>
       <td>
         <pre>    if user.nil?</pre>
@@ -4066,7 +4092,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>181</pre>
+        <pre>182</pre>
       </td>
       <td>
         <pre>      return false</pre>
@@ -4079,7 +4105,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>182</pre>
+        <pre>183</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -4092,7 +4118,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>183</pre>
+        <pre>184</pre>
       </td>
       <td>
         <pre></pre>
@@ -4105,23 +4131,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>184</pre>
-      </td>
-      <td>
-        <pre>    game.users.each do |u|</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>185</pre>
       </td>
       <td>
-        <pre>      if u.login==user.login</pre>
+        <pre>    game.users.each do |u|</pre>
       </td>
       <td class="hits">
         0
@@ -4134,6 +4147,19 @@
         <pre>186</pre>
       </td>
       <td>
+        <pre>      if u.login==user.login</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>187</pre>
+      </td>
+      <td>
         <pre>        return false</pre>
       </td>
       <td class="hits">
@@ -4144,23 +4170,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>187</pre>
-      </td>
-      <td>
-        <pre>      end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>188</pre>
       </td>
       <td>
-        <pre>    end</pre>
+        <pre>      end</pre>
       </td>
       <td class="hits">
         
@@ -4173,6 +4186,19 @@
         <pre>189</pre>
       </td>
       <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>190</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -4183,7 +4209,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>190</pre>
+        <pre>191</pre>
       </td>
       <td>
         <pre>    return true</pre>
@@ -4196,7 +4222,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>191</pre>
+        <pre>192</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4209,7 +4235,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>192</pre>
+        <pre>193</pre>
       </td>
       <td>
         <pre></pre>
@@ -4222,7 +4248,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>193</pre>
+        <pre>194</pre>
       </td>
       <td>
         <pre>  def can_unregister?(game, user)</pre>
@@ -4235,7 +4261,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>194</pre>
+        <pre>195</pre>
       </td>
       <td>
         <pre>    if user.nil?</pre>
@@ -4248,7 +4274,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>195</pre>
+        <pre>196</pre>
       </td>
       <td>
         <pre>      return false</pre>
@@ -4261,7 +4287,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>196</pre>
+        <pre>197</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -4274,7 +4300,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>197</pre>
+        <pre>198</pre>
       </td>
       <td>
         <pre></pre>
@@ -4287,7 +4313,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>198</pre>
+        <pre>199</pre>
       </td>
       <td>
         <pre>    game.users.each do |u|</pre>
@@ -4300,7 +4326,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>199</pre>
+        <pre>200</pre>
       </td>
       <td>
         <pre>      if u.login==user.login</pre>
@@ -4313,7 +4339,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>200</pre>
+        <pre>201</pre>
       </td>
       <td>
         <pre>        return true</pre>
@@ -4326,7 +4352,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>201</pre>
+        <pre>202</pre>
       </td>
       <td>
         <pre>      end</pre>
@@ -4339,7 +4365,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>202</pre>
+        <pre>203</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -4352,7 +4378,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>203</pre>
+        <pre>204</pre>
       </td>
       <td>
         <pre></pre>
@@ -4365,7 +4391,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>204</pre>
+        <pre>205</pre>
       </td>
       <td>
         <pre>    return false</pre>
@@ -4378,7 +4404,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>205</pre>
+        <pre>206</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4391,7 +4417,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>206</pre>
+        <pre>207</pre>
       </td>
       <td>
         <pre></pre>
@@ -4404,7 +4430,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>207</pre>
+        <pre>208</pre>
       </td>
       <td>
         <pre>  helper_method :can_register?</pre>
@@ -4417,7 +4443,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>208</pre>
+        <pre>209</pre>
       </td>
       <td>
         <pre>  helper_method :can_unregister?</pre>
@@ -4430,7 +4456,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>209</pre>
+        <pre>210</pre>
       </td>
       <td>
         <pre></pre>
@@ -4443,7 +4469,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>210</pre>
+        <pre>211</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -4561,9 +4587,22 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>1</pre>
+      </td>
+      <td>
+        <pre># coding: utf-8</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>2</pre>
       </td>
       <td>
         <pre>class LoginController &lt; ApplicationController</pre>
@@ -4576,7 +4615,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>2</pre>
+        <pre>3</pre>
       </td>
       <td>
         <pre>  skip_before_filter :require_login, :only =&gt; [:new, :create]</pre>
@@ -4589,7 +4628,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>3</pre>
+        <pre>4</pre>
       </td>
       <td>
         <pre></pre>
@@ -4602,7 +4641,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>4</pre>
+        <pre>5</pre>
       </td>
       <td>
         <pre>  #Log in form</pre>
@@ -4615,7 +4654,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>5</pre>
+        <pre>6</pre>
       </td>
       <td>
         <pre>  def new</pre>
@@ -4628,7 +4667,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>6</pre>
+        <pre>7</pre>
       </td>
       <td>
         <pre>    #flash[:warning]=nil</pre>
@@ -4641,23 +4680,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>7</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>8</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
         
@@ -4670,6 +4696,19 @@
         <pre>9</pre>
       </td>
       <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>10</pre>
+      </td>
+      <td>
         <pre>  # &quot;Create&quot; a login, aka &quot;log the user in&quot;</pre>
       </td>
       <td class="hits">
@@ -4680,7 +4719,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>10</pre>
+        <pre>11</pre>
       </td>
       <td>
         <pre>  def create</pre>
@@ -4693,7 +4732,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>11</pre>
+        <pre>12</pre>
       </td>
       <td>
         <pre>    if user=User.authenticate(params[:username], params[:password])</pre>
@@ -4706,7 +4745,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>12</pre>
+        <pre>13</pre>
       </td>
       <td>
         <pre>      session[:current_user_id]=user.id</pre>
@@ -4719,10 +4758,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>13</pre>
+        <pre>14</pre>
       </td>
       <td>
-        <pre>      flash[:notice]=&quot;Welcome!&quot;</pre>
+        <pre>      flash[:notice]=&quot;Добро пожаловать!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -4732,7 +4771,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>14</pre>
+        <pre>15</pre>
       </td>
       <td>
         <pre>      redirect_to root_path</pre>
@@ -4745,7 +4784,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>15</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -4758,10 +4797,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>16</pre>
+        <pre>17</pre>
       </td>
       <td>
-        <pre>      flash[:warning]=&quot;Wrong Credentials!&quot;</pre>
+        <pre>      flash[:warning]=&quot;Неправильные логин/пароль!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -4771,7 +4810,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>17</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre>      redirect_to root_path</pre>
@@ -4784,7 +4823,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>18</pre>
+        <pre>19</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -4797,23 +4836,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>19</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>20</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
         
@@ -4826,6 +4852,19 @@
         <pre>21</pre>
       </td>
       <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>22</pre>
+      </td>
+      <td>
         <pre>  #&quot;Delete&quot; a login, aka &quot;log the user out&quot;</pre>
       </td>
       <td class="hits">
@@ -4836,7 +4875,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>22</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>  def destroy</pre>
@@ -4849,7 +4888,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>23</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>    @_current_user=session[:current_user_id]=nil</pre>
@@ -4862,7 +4901,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>24</pre>
+        <pre>25</pre>
       </td>
       <td>
         <pre>    redirect_to root_path</pre>
@@ -4875,7 +4914,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>25</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4888,7 +4927,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>26</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -4920,9 +4959,22 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>1</pre>
+      </td>
+      <td>
+        <pre># coding: utf-8</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>2</pre>
       </td>
       <td>
         <pre>class UsersController &lt; ApplicationController</pre>
@@ -4935,7 +4987,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>2</pre>
+        <pre>3</pre>
       </td>
       <td>
         <pre>  def index</pre>
@@ -4948,7 +5000,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>3</pre>
+        <pre>4</pre>
       </td>
       <td>
         <pre>    @users = User.all</pre>
@@ -4961,7 +5013,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>4</pre>
+        <pre>5</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4974,7 +5026,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>5</pre>
+        <pre>6</pre>
       </td>
       <td>
         <pre></pre>
@@ -4987,7 +5039,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>6</pre>
+        <pre>7</pre>
       </td>
       <td>
         <pre>  def new</pre>
@@ -5000,7 +5052,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>7</pre>
+        <pre>8</pre>
       </td>
       <td>
         <pre>  #just go render &quot;New&quot; template...</pre>
@@ -5013,7 +5065,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>8</pre>
+        <pre>9</pre>
       </td>
       <td>
         <pre>    @user=User.new</pre>
@@ -5026,7 +5078,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>9</pre>
+        <pre>10</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -5039,7 +5091,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>10</pre>
+        <pre>11</pre>
       </td>
       <td>
         <pre></pre>
@@ -5052,7 +5104,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>11</pre>
+        <pre>12</pre>
       </td>
       <td>
         <pre>  def create</pre>
@@ -5065,7 +5117,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>12</pre>
+        <pre>13</pre>
       </td>
       <td>
         <pre>    #Check if login available</pre>
@@ -5078,7 +5130,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>13</pre>
+        <pre>14</pre>
       </td>
       <td>
         <pre>    existing_user = User.find_by_login(params[:user][:login])</pre>
@@ -5091,7 +5143,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>14</pre>
+        <pre>15</pre>
       </td>
       <td>
         <pre>    #Login is unavailable! :-(</pre>
@@ -5104,7 +5156,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>15</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>    if not existing_user.nil?</pre>
@@ -5117,10 +5169,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>16</pre>
+        <pre>17</pre>
       </td>
       <td>
-        <pre>      flash[:warning]=&quot;User with login \&quot;#{params[:user][:login]}\&quot; already exists!&quot;</pre>
+        <pre>      flash[:warning]=&quot;Пользователь с никнеймом \&quot;#{params[:user][:login]}\&quot; уже существует!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5130,7 +5182,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>17</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre>      redirect_to new_user_path</pre>
@@ -5143,7 +5195,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>18</pre>
+        <pre>19</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -5156,7 +5208,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>19</pre>
+        <pre>20</pre>
       </td>
       <td>
         <pre>    #Everything cool! Go create new user</pre>
@@ -5169,7 +5221,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>20</pre>
+        <pre>21</pre>
       </td>
       <td>
         <pre>      user = User.new</pre>
@@ -5182,7 +5234,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>21</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre>      user[:login]= params[:user][:login]</pre>
@@ -5195,7 +5247,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>22</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>      user[:password] = params[:user][:password]</pre>
@@ -5208,7 +5260,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>23</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>      user[:first_name] = params[:user][:first_name]</pre>
@@ -5221,7 +5273,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>24</pre>
+        <pre>25</pre>
       </td>
       <td>
         <pre>      user[:last_name] = params[:user][:last_name]</pre>
@@ -5234,7 +5286,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>25</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre>      user[:position] = params[:user][:position]</pre>
@@ -5247,7 +5299,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>26</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>      user.save</pre>
@@ -5260,7 +5312,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>27</pre>
+        <pre>28</pre>
       </td>
       <td>
         <pre>      if user.errors.any?</pre>
@@ -5273,10 +5325,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>28</pre>
+        <pre>29</pre>
       </td>
       <td>
-        <pre>        flash[:warning]=&quot;Some Error occurred!&quot;</pre>
+        <pre>        flash[:warning]=&quot;Ошибко О_о!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5286,7 +5338,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>29</pre>
+        <pre>30</pre>
       </td>
       <td>
         <pre>        redirect_to root_path</pre>
@@ -5299,7 +5351,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>30</pre>
+        <pre>31</pre>
       </td>
       <td>
         <pre>      else</pre>
@@ -5312,10 +5364,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>31</pre>
+        <pre>32</pre>
       </td>
       <td>
-        <pre>        flash[:notice]=&quot;User #{user[:login]} was created!&quot;</pre>
+        <pre>        flash[:notice]=&quot;Пользователь #{user[:login]} был зарегистрирован!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5325,7 +5377,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>32</pre>
+        <pre>33</pre>
       </td>
       <td>
         <pre>        redirect_to root_path</pre>
@@ -5338,23 +5390,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>33</pre>
-      </td>
-      <td>
-        <pre>      end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>34</pre>
       </td>
       <td>
-        <pre>    end</pre>
+        <pre>      end</pre>
       </td>
       <td class="hits">
         
@@ -5367,7 +5406,7 @@
         <pre>35</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -5380,6 +5419,19 @@
         <pre>36</pre>
       </td>
       <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>37</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -5390,7 +5442,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>37</pre>
+        <pre>38</pre>
       </td>
       <td>
         <pre>  def show</pre>
@@ -5403,7 +5455,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>38</pre>
+        <pre>39</pre>
       </td>
       <td>
         <pre>    @user = User.find(params[:id])</pre>
@@ -5416,7 +5468,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>39</pre>
+        <pre>40</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -5429,7 +5481,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>40</pre>
+        <pre>41</pre>
       </td>
       <td>
         <pre></pre>
@@ -5442,7 +5494,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>41</pre>
+        <pre>42</pre>
       </td>
       <td>
         <pre>  def edit</pre>
@@ -5455,7 +5507,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>42</pre>
+        <pre>43</pre>
       </td>
       <td>
         <pre>    if ((not current_user.nil?) &amp;&amp; current_user.id.to_s==params[:id] )</pre>
@@ -5468,7 +5520,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>43</pre>
+        <pre>44</pre>
       </td>
       <td>
         <pre>    @user = User.find(params[:id])</pre>
@@ -5481,7 +5533,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>44</pre>
+        <pre>45</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -5494,23 +5546,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>45</pre>
-      </td>
-      <td>
-        <pre>      flash[:warning]=&quot;You are not allowed to edit other profiles!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>46</pre>
       </td>
       <td>
-        <pre>      current_user=nil</pre>
+        <pre>      flash[:warning]=&quot;Вы не можете редактировать чужие профили!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5523,6 +5562,19 @@
         <pre>47</pre>
       </td>
       <td>
+        <pre>      current_user=nil</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>48</pre>
+      </td>
+      <td>
         <pre>      redirect_to root_path</pre>
       </td>
       <td class="hits">
@@ -5533,23 +5585,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>48</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>49</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -5562,6 +5601,19 @@
         <pre>50</pre>
       </td>
       <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>51</pre>
+      </td>
+      <td>
         <pre></pre>
       </td>
       <td class="hits">
@@ -5572,7 +5624,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>51</pre>
+        <pre>52</pre>
       </td>
       <td>
         <pre>  def update</pre>
@@ -5585,7 +5637,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>52</pre>
+        <pre>53</pre>
       </td>
       <td>
         <pre>    #Is password right?</pre>
@@ -5598,7 +5650,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>53</pre>
+        <pre>54</pre>
       </td>
       <td>
         <pre>    #This check is needed in order to prevent malicious calls from outside a browser</pre>
@@ -5611,7 +5663,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>54</pre>
+        <pre>55</pre>
       </td>
       <td>
         <pre>    user = User.authenticate(params[:login],params[:password])</pre>
@@ -5624,7 +5676,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>55</pre>
+        <pre>56</pre>
       </td>
       <td>
         <pre>    if user.nil?</pre>
@@ -5637,10 +5689,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>56</pre>
+        <pre>57</pre>
       </td>
       <td>
-        <pre>      flash[:warning]=&quot;Wrong credentials! Stop messing with my program!&quot;</pre>
+        <pre>      flash[:warning]=&quot;Неправильные логин/пароль, прекрати насиловать программу!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5650,7 +5702,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>57</pre>
+        <pre>58</pre>
       </td>
       <td>
         <pre>      redirect_to root_path</pre>
@@ -5663,7 +5715,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>58</pre>
+        <pre>59</pre>
       </td>
       <td>
         <pre>    else</pre>
@@ -5676,7 +5728,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>59</pre>
+        <pre>60</pre>
       </td>
       <td>
         <pre>    #Check if login available</pre>
@@ -5689,7 +5741,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>60</pre>
+        <pre>61</pre>
       </td>
       <td>
         <pre>      existing_user = User.find_by_login(params[:user][:login])</pre>
@@ -5702,7 +5754,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>61</pre>
+        <pre>62</pre>
       </td>
       <td>
         <pre>      #Login is unavailable! :-(</pre>
@@ -5715,7 +5767,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>62</pre>
+        <pre>63</pre>
       </td>
       <td>
         <pre>      if not ( existing_user.nil? || existing_user.id.to_s==params[:id])</pre>
@@ -5728,23 +5780,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>63</pre>
-      </td>
-      <td>
-        <pre>        flash[:warning]=&quot;User with login \&quot;#{params[:user][:login]}\&quot; already exists!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>64</pre>
       </td>
       <td>
-        <pre>        redirect_to edit_user_path(user.id)</pre>
+        <pre>        flash[:warning]=&quot;Пользователь с никнеймом \&quot;#{params[:user][:login]}\&quot; уже существует!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5757,6 +5796,19 @@
         <pre>65</pre>
       </td>
       <td>
+        <pre>        redirect_to edit_user_path(user.id)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>66</pre>
+      </td>
+      <td>
         <pre>        return</pre>
       </td>
       <td class="hits">
@@ -5767,7 +5819,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>66</pre>
+        <pre>67</pre>
       </td>
       <td>
         <pre>      end</pre>
@@ -5780,7 +5832,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>67</pre>
+        <pre>68</pre>
       </td>
       <td>
         <pre>      if ( params[:user][:login].length&lt;4 or params[:user][:password].length&lt;6)</pre>
@@ -5793,23 +5845,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>68</pre>
-      </td>
-      <td>
-        <pre>        flash[:warning]=&quot;Password or Nickname is too short!&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
         <pre>69</pre>
       </td>
       <td>
-        <pre>        redirect_to edit_user_path(user.id)</pre>
+        <pre>        flash[:warning]=&quot;Пароль или никнейм слишком короткие! Требуемая длина никнейма 4 символа, пароля 6&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5822,6 +5861,19 @@
         <pre>70</pre>
       </td>
       <td>
+        <pre>        redirect_to edit_user_path(user.id)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>71</pre>
+      </td>
+      <td>
         <pre>        return</pre>
       </td>
       <td class="hits">
@@ -5832,7 +5884,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>71</pre>
+        <pre>72</pre>
       </td>
       <td>
         <pre>      end</pre>
@@ -5845,7 +5897,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>72</pre>
+        <pre>73</pre>
       </td>
       <td>
         <pre>      #Everything cool! Go create new user</pre>
@@ -5858,7 +5910,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>73</pre>
+        <pre>74</pre>
       </td>
       <td>
         <pre>        user[:login]= params[:user][:login]</pre>
@@ -5871,7 +5923,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>74</pre>
+        <pre>75</pre>
       </td>
       <td>
         <pre>        user[:password] = params[:user][:password]</pre>
@@ -5884,7 +5936,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>75</pre>
+        <pre>76</pre>
       </td>
       <td>
         <pre>        user[:first_name] = params[:user][:first_name]</pre>
@@ -5897,7 +5949,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>76</pre>
+        <pre>77</pre>
       </td>
       <td>
         <pre>        user[:last_name] = params[:user][:last_name]</pre>
@@ -5910,7 +5962,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>77</pre>
+        <pre>78</pre>
       </td>
       <td>
         <pre>        user[:position] = params[:user][:position]</pre>
@@ -5923,7 +5975,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>78</pre>
+        <pre>79</pre>
       </td>
       <td>
         <pre>        user.save</pre>
@@ -5936,7 +5988,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>79</pre>
+        <pre>80</pre>
       </td>
       <td>
         <pre>        if user.errors.any?</pre>
@@ -5949,10 +6001,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>80</pre>
+        <pre>81</pre>
       </td>
       <td>
-        <pre>          flash[:warning]=&quot;Some Error occurred!&quot;</pre>
+        <pre>          flash[:warning]=&quot;Ошибко О_о!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -5962,7 +6014,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>81</pre>
+        <pre>82</pre>
       </td>
       <td>
         <pre>          redirect_to root_path</pre>
@@ -5975,7 +6027,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>82</pre>
+        <pre>83</pre>
       </td>
       <td>
         <pre>        else</pre>
@@ -5988,10 +6040,10 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>83</pre>
+        <pre>84</pre>
       </td>
       <td>
-        <pre>          flash[:notice]=&quot;Your profile was updated!&quot;</pre>
+        <pre>          flash[:notice]=&quot;Ваш профиль был обновлён!&quot;</pre>
       </td>
       <td class="hits">
         0
@@ -6001,7 +6053,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>84</pre>
+        <pre>85</pre>
       </td>
       <td>
         <pre>          redirect_to user_path(user.id)</pre>
@@ -6014,7 +6066,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>85</pre>
+        <pre>86</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -6027,23 +6079,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>86</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
         <pre>87</pre>
       </td>
       <td>
-        <pre>    end</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -6056,7 +6095,7 @@
         <pre>88</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    end</pre>
       </td>
       <td class="hits">
         
@@ -6069,7 +6108,7 @@
         <pre>89</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
         
@@ -6080,6 +6119,19 @@
     <tr class="never" >
       <td class="line_number">
         <pre>90</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>91</pre>
       </td>
       <td>
         <pre>end</pre>
