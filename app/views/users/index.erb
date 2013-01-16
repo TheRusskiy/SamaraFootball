@@ -1,5 +1,5 @@
 <div>
-  <table class="table table-striped table-hover pull-left table-bordered">
+  <table class="table table-striped table-hover pull-left table-bordered mid-table">
   <tr>
   <th>№</th>
   <th>Login</th>
@@ -18,7 +18,7 @@
       <td class="first_name_row"><%= u.first_name %></td>
       <td class="last_name_row"><%= u.last_name %></td>
       <td><%= u.position %></td>
-      <td><%= link_to "details", user_path(u) %></td>
+      <td><%= button_to "details", user_path(u), :class=>"btn btn-small btn-inverse", :method=>"get" %></td>
       </tr>
   <% end %>
    </table>
