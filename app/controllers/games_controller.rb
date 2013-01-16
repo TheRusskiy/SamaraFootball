@@ -1,10 +1,11 @@
+# coding: utf-8
 class GamesController < ApplicationController
   def index
     @games = Game.all
   end
   def new
     if current_user.nil?
-      flash[:warning]="You must be logged in to create games!"
+      flash[:warning]="Чтобы организовывать матчи нужно войти под своим логином!"
       redirect_to login_form_path
     else
     #  render "NEW" template
@@ -15,24 +16,24 @@ class GamesController < ApplicationController
    def create
      @game = Game.new(params[:game])
      if @game.price<0
-       flash[:warning]="Price can't be below zero!"
+       flash[:warning]="Цена не может быть < 0, спустись на землю!"
        render new_game_path
        return
      end
      if @game.place=="" or @game.place.nil?
-       flash[:warning]="Specify place!"
+       flash[:warning]="Играть то где будем? Укажи место!"
        render new_game_path
        return
      end
 
      if @game.date<Date.today or (@game.date==Date.today&&@game.time<(Time.now.getutc+Time.now.utc_offset))
-       flash[:warning]="It's gotta be future!"
+       flash[:warning]="Нельзя создать игру в прошлом!"
        render new_game_path
        return
      end
 
     if current_user.nil?
-      flash[:warning]="You must be logged in to create games!"
+      flash[:warning]="Чтобы организовывать матчи нужно войти под своим логином!"
       redirect_to login_form_path
       return
     else
@@ -41,7 +42,7 @@ class GamesController < ApplicationController
 
 
      if @game.save
-       flash[:notice]=@game.to_s+" was created!"
+       flash[:notice]=@game.to_s+" была создана!"
        redirect_to game_path(@game.id)
      else
        flash[:warning]=@game.errors.full_messages
@@ -59,7 +60,7 @@ class GamesController < ApplicationController
    def edit
      @game = Game.find(params[:id])
      if (current_user.nil? or current_user.id!=@game.creator)
-       flash[:warning]="Only creator can edit games!"
+       flash[:warning]="Только организатор может редактировать матч!"
        redirect_to root_path
        return
      end
@@ -68,12 +69,12 @@ class GamesController < ApplicationController
    def destroy
       @game=Game.find(params[:id])
       if (current_user.nil? or current_user.id!=@game.creator)
-       flash[:warning]="Only creator can delete games!"
+       flash[:warning]="Только организатор может отменить матч!"
        redirect_to root_path
        return
      end
       if @game.delete
-        flash[:notice]=@game.to_s+" was deleted!"
+        flash[:notice]=@game.to_s+" удалена!"
       else
         flash[:warning]=@game.errors.full_messages
      end
@@ -85,7 +86,7 @@ class GamesController < ApplicationController
      #This check is needed in order to prevent malicious calls from outside a browser
      user = User.authenticate(params[:user][:login],params[:user][:password])
      if user.nil?
-       flash[:warning]="Wrong credentials! Stop messing with my program!"
+       flash[:warning]="Неправильные логин/пароль, прекрати насиловать программу!"
        redirect_to root_path
      else
        @old_game = Game.find(params[:id])
@@ -94,25 +95,25 @@ class GamesController < ApplicationController
 
         #VALIDATIONS:
         if @game.price<0
-          flash[:warning]="Price can't be below zero!"
+          flash[:warning]="Цена не может быть < 0, спустись на землю!"
           redirect_to edit_game_path(params[:id])
           return
         end
         if @game.place=="" or @game.place.nil?
-          flash[:warning]="Specify place!"
+          flash[:warning]="Играть то где будем? Укажи место!"
           redirect_to edit_game_path(params[:id])
           return
         end
 
         if @game.date<Date.today or (@game.date==Date.today&&@game.time<(Time.now.getutc+Time.now.utc_offset))
-          flash[:warning]="It's gotta be future!"
+          flash[:warning]="Нельзя создать игру в прошлом!"
           redirect_to edit_game_path(params[:id])
           return
         end
 
 
        if @old_game.update_attributes(params[:game])
-         flash[:notice]=@game.to_s+" was updated!"
+         flash[:notice]=@game.to_s+" была отредактирована!"
          redirect_to game_path(@old_game.id)
        else
          flash[:warning]=@game.errors.full_messages
@@ -125,24 +126,24 @@ class GamesController < ApplicationController
     @user = User.find(params[:user_id])
     user = User.authenticate(params[:user][:login],params[:user][:password])
         if user.nil? or user.id != @user.id
-          flash[:warning]="Wrong credentials! Stop messing with my program!"
+          flash[:warning]="Неправильные логин/пароль, прекрати насиловать программу!"
           redirect_to root_path
         else
 
         @game = Game.find(params[:game_id])
 
         if not can_register?(@game, @user)
-          flash[:warning]="You can't register another user!"
+          flash[:warning]="Вы не можете зарегистрировать другого другого игрока"
           redirect_to root_path
           return
         end
 
         @game.users << @user
         if @game.save!
-          flash[:notice]="Do come!"
+          flash[:notice]="Приходи, ждём!"
           redirect_to game_path(@game.id)
         else
-          flash[:warning]="Some error occurred!"
+          flash[:warning]="Ошибко О_о!"
           redirect_to game_path(@game.id)
         end
 
@@ -153,23 +154,23 @@ class GamesController < ApplicationController
     @user = User.find(params[:user_id])
     user = User.authenticate(params[:user][:login],params[:user][:password])
         if user.nil? or user.id != @user.id
-          flash[:warning]="Wrong credentials! Stop messing with my program!"
+          flash[:warning]="Неправильные логин/пароль, прекрати насиловать программу!"
           redirect_to root_path
         else
 
         @game = Game.find(params[:game_id])
         if not can_unregister?(@game, @user)
-          flash[:warning]="You can't unregister another user!"
+          flash[:warning]="Вы не можете зарегистрировать другого другого игрока"
           redirect_to root_path
           return
         end
 
         @game.users.delete(@user)
         if @game.save!
-          flash[:notice]="Fuck you then!"
+          flash[:notice]="Не особо тебя и ждали..."
           redirect_to game_path(@game.id)
         else
-          flash[:warning]="Some error occurred!"
+          flash[:warning]="Ошибко О_о"
           redirect_to game_path(@game.id)
         end
 

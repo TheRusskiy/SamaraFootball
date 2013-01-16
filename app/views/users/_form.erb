@@ -6,23 +6,23 @@
   <%= f.text_field :login, :placeholder => "e.g. MyLogin69", :value => @user.login%>
 </div>
 <div class="field">
-  <%= f.label :password %><br />
-  <%= f.text_field :password, :type => :password, :placeholder => "your password" ,:value => @user.password%>
+  <%= f.label "Пароль" %><br />
+  <%= f.text_field :password, :type => :password, :placeholder => "password" ,:value => @user.password%>
 </div>
 <div class="field">
-<%= f.label "First Name" %><br />
+<%= f.label "Имя" %><br />
 <%= f.text_field :first_name,  :placeholder => "e.g. Dmitry", :value => @user.first_name%>
 </div>
 <div class="field">
-<%= f.label "Last Name" %><br />
+<%= f.label "Фамилия" %><br />
 <%= f.text_field :last_name,  :placeholder => "e.g. Ishkov", :value => @user.last_name%>
 </div>
 <div class="field">
-<%= f.label "Position" %><br />
+<%= f.label "Позиция" %><br />
 <%= f.text_field :position,  :placeholder => "e.g. goalkeeper", :value => @user.position%>
 </div>
 <div class="actions">
-  <%= f.submit "Submit", :confirm => "Check twice!", :action=>users_path, :method =>"post", :class => 'btn btn-primary'%>
+  <%= f.submit "Подтвердить", :confirm => "Проверь дважды!", :action=>users_path, :method =>"post", :class => 'btn btn-primary'%>
 </div>
     <% if not current_user.nil?  %>
     <%= f.hidden_field :login, :name=> "login", :value => current_user.login %>

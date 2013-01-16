@@ -1,16 +1,29 @@
 <div class="home_feed"> 
   <div class="hero-unit">
     <h1>Samara Football</h1>
-    <h3>Welcome!</h3>
+    <% if current_user.nil? %>
+    <!-- Not logged in: -->
+    <h3>Приветствую тебя, аноним!</h3>
     <p>
       <ol>
-        <li>Register
-          <li>Log In
-            <li>Create game / Register for an existing game
-              <li>Send feedback on <strong>TheRusskiy@gmail.com</strong>
-
+        <li>Зарегистрируйся (правый верхний угол)
+          <li>Войди под своим логином
+            <li>Баги, отзывы и предложения шли на <strong>TheRusskiy@gmail.com</strong>
       </ol>
     </p>
+
+    <% else %>
+    <!-- Logged in: -->
+    <h3>Приветствую тебя, <%= current_user.first_name  %>!</h3>
+    <p>
+      <ol>
+        <li>Редактируй профиль, нажав на свой никнейм (в правом верхнем углу)
+          <li>Создай матч / Прими участие в уже созданном
+            <li>Баги, отзывы и предложения шли на <strong>TheRusskiy@gmail.com</strong>
+      </ol>
+    </p>
+    <% end %>     
+
   </div>
 
   <div id="myCarousel" class="carousel slide">

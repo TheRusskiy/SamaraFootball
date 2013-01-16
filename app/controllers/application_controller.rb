@@ -1,3 +1,4 @@
+# coding: utf-8
 class ApplicationController < ActionController::Base
   protect_from_forgery
   #before_filter :assign_user
@@ -21,7 +22,7 @@ class ApplicationController < ActionController::Base
 
   def require_login
     unless logged_in?
-      flash[:warning] = "You must be logged in to access this section"
+      flash[:warning] = "Чтобы получить доступ к этой странице вы должны залогинится!"
       redirect_to login_form_path # halts request cycle
     end
   end

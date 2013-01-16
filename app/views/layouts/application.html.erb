@@ -36,15 +36,15 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                <!--  <li class="active"><a href="#">Home</a></li> -->
-                <li><a href="<%= root_path %>">Home</a></li>
+                <li><a href="<%= root_path %>">Главная</a></li>
                 
-                <li><a href="<%= users_path %>">Users</a></li>
+                <li><a href="<%= users_path %>">Футболисты</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Матчи<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="<%= games_path %>">Show Games</a></li>
-                    <li><a href="<%= new_game_path %>">New Game</a></li>
+                    <li><a href="<%= games_path %>">Показать матчи</a></li>
+                    <li><a href="<%= new_game_path %>">Организовать матч</a></li>
                   </ul>
                 </li>
               </ul>
@@ -53,7 +53,7 @@
                    <!--Register-->
                   <li>
                   <form class="navbar-form" accept-charset="UTF-8" action="<%=new_user_path%>" method="get">
-                  <button type="submit" class="btn">Register</button>
+                  <button type="submit" class="btn">Зарегистрироваться</button>
                   </form>
                   </li>
 
@@ -62,7 +62,7 @@
                   <li>
                   <form class="navbar-form" accept-charset="UTF-8" action="<%=login_form_path%>" method="get">
                   <!-- <input type="text" class="span2"> -->
-                  <button type="submit" class="btn">Log In</button>
+                  <button type="submit" class="btn">Войти</button>
                   </form>
                   </li>
 
@@ -76,7 +76,7 @@
               <!-- Log Out -->
                   <li>
                   <form class="navbar-form" accept-charset="UTF-8" action="<%=logout_path%>" method="destroy">
-                  <button type="submit" class="btn">Log Out</button>
+                  <button type="submit" class="btn">Выйти</button>
                   </form>
                   </li>
               <% end %>

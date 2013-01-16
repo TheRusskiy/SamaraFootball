@@ -1,3 +1,4 @@
+# coding: utf-8
 class LoginController < ApplicationController
   skip_before_filter :require_login, :only => [:new, :create]
 
@@ -10,10 +11,10 @@ class LoginController < ApplicationController
   def create
     if user=User.authenticate(params[:username], params[:password])
       session[:current_user_id]=user.id
-      flash[:notice]="Welcome!"
+      flash[:notice]="Добро пожаловать!"
       redirect_to root_path
     else
-      flash[:warning]="Wrong Credentials!"
+      flash[:warning]="Неправильные логин/пароль!"
       redirect_to root_path
     end
   end
