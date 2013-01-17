@@ -13,8 +13,13 @@ group :test do
   gem 'sqlite3'
   gem 'debugger'
   
-  gem 'simplecov'#place thic code at the VERY top of spec_helper.rb #require 'simplecov' #SimpleCov.start
-  gem 'ZenTest'
+  gem 'simplecov'#place thic code at the VERY top of spec_helper.rb: require 'simplecov'; SimpleCov.start
+  #gem 'ZenTest'
+
+  gem "factory_girl_rails"
+  gem "spork", "> 0.9.0.rc" #spork --bootstrap
+  #more slaves: lib/spork/run_strategy/magazine.rb - Slave_Id_Range = 1..10
+  gem "guard-spork" #guard init spork
 end
 
 group :test, :development do

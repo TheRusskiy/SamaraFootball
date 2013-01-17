@@ -1,0 +1,3 @@
+c:
+cd rsf
+cmd
