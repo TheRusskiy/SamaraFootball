@@ -57,7 +57,7 @@ class GamesController < ApplicationController
    end
 
 
-   def edit
+  def edit
      @game = Game.find(params[:id])
      if (current_user.nil? or current_user.id!=@game.creator)
        flash[:warning]="Только организатор может редактировать матч!"

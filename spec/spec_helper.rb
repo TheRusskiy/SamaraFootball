@@ -24,8 +24,8 @@ Spork.prefork do
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+  
   require "./spec/fast/active_record_spec_helper"
-
   RSpec.configure do |config|
     config.pattern = "**/*_spec.rb"
     config.fixture_path = "#{::Rails.root}/spec/fixtures"

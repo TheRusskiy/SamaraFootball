@@ -1163,13 +1163,15 @@ C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bin/rspec spec:
   :created_at: 2013-01-17 13:58:01.412891000 +04:00
 RSpec:
   :original_result:
-    C:/rsf/config/environment.rb:
+    D:/rsf/config/environment.rb:
     - 
+    - 
+    - 
     - 1
     - 
     - 
     - 1
-    C:/rsf/config/application.rb:
+    D:/rsf/config/application.rb:
     - 1
     - 
     - 1
@@ -1233,14 +1235,14 @@ RSpec:
     - 1
     - 
     - 
-    C:/rsf/config/boot.rb:
+    D:/rsf/config/boot.rb:
     - 1
     - 
     - 
     - 1
     - 
     - 1
-    C:/rsf/config/environments/test.rb:
+    D:/rsf/config/environments/test.rb:
     - 1
     - 
     - 
@@ -1278,7 +1280,7 @@ RSpec:
     - 
     - 1
     - 
-    C:/rsf/config/initializers/active_admin.rb:
+    D:/rsf/config/initializers/active_admin.rb:
     - 1
     - 
     - 
@@ -1430,7 +1432,7 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/config/initializers/backtrace_silencers.rb:
+    D:/rsf/config/initializers/backtrace_silencers.rb:
     - 
     - 
     - 
@@ -1438,7 +1440,7 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/config/initializers/devise.rb:
+    D:/rsf/config/initializers/devise.rb:
     - 
     - 
     - 1
@@ -1679,7 +1681,7 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/config/initializers/inflections.rb:
+    D:/rsf/config/initializers/inflections.rb:
     - 
     - 
     - 
@@ -1695,13 +1697,13 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/config/initializers/mime_types.rb:
+    D:/rsf/config/initializers/mime_types.rb:
     - 
     - 
     - 
     - 
     - 
-    C:/rsf/config/initializers/secret_token.rb:
+    D:/rsf/config/initializers/secret_token.rb:
     - 
     - 
     - 
@@ -1709,7 +1711,7 @@ RSpec:
     - 
     - 
     - 1
-    C:/rsf/config/initializers/session_store.rb:
+    D:/rsf/config/initializers/session_store.rb:
     - 
     - 
     - 
@@ -1719,7 +1721,7 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/config/initializers/wrap_parameters.rb:
+    D:/rsf/config/initializers/wrap_parameters.rb:
     - 
     - 
     - 
@@ -1734,7 +1736,7 @@ RSpec:
     - 1
     - 1
     - 
-    C:/rsf/config/routes.rb:
+    D:/rsf/config/routes.rb:
     - 1
     - 
     - 
@@ -1809,7 +1811,7 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/app/controllers/application_controller.rb:
+    D:/rsf/app/controllers/application_controller.rb:
     - 
     - 1
     - 1
@@ -1848,10 +1850,10 @@ RSpec:
     - 0
     - 
     - 
-    C:/rsf/app/helpers/application_helper.rb:
+    D:/rsf/app/helpers/application_helper.rb:
     - 1
     - 
-    C:/rsf/app/helpers/games_helper.rb:
+    D:/rsf/app/helpers/games_helper.rb:
     - 1
     - 1
     - 0
@@ -1862,16 +1864,17 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/app/helpers/home_helper.rb:
+    D:/rsf/app/helpers/home_helper.rb:
     - 1
     - 
-    C:/rsf/app/helpers/login_helper.rb:
+    D:/rsf/app/helpers/login_helper.rb:
     - 1
     - 
-    C:/rsf/app/helpers/users_helper.rb:
+    D:/rsf/app/helpers/users_helper.rb:
     - 1
+    - 
     - 
-    C:/rsf/app/admin/admin_user.rb:
+    D:/rsf/app/admin/admin_user.rb:
     - 1
     - 1
     - 0
@@ -1892,7 +1895,7 @@ RSpec:
     - 0
     - 
     - 
-    C:/rsf/app/models/admin_user.rb:
+    D:/rsf/app/models/admin_user.rb:
     - 1
     - 
     - 
@@ -1904,7 +1907,7 @@ RSpec:
     - 1
     - 
     - 
-    C:/rsf/app/admin/dashboard.rb:
+    D:/rsf/app/admin/dashboard.rb:
     - 1
     - 
     - 1
@@ -1938,11 +1941,11 @@ RSpec:
     - 
     - 
     - 
-    C:/rsf/app/admin/games.rb:
+    D:/rsf/app/admin/games.rb:
     - 1
     - 
     - 
-    C:/rsf/app/models/game.rb:
+    D:/rsf/app/models/game.rb:
     - 1
     - 1
     - 1
@@ -1955,20 +1958,32 @@ RSpec:
     - 0
     - 
     - 
-    C:/rsf/app/admin/users.rb:
+    D:/rsf/app/admin/users.rb:
     - 1
     - 
     - 
-    C:/rsf/app/models/user.rb:
+    D:/rsf/app/models/user.rb:
     - 1
     - 1
     - 1
     - 1
     - 1
+    - 
+    - 1
     - 0
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    D:/rsf/lib/user_extensions.rb:
+    - 1
+    - 1
+    - 1
     - 
     - 
-    C:/rsf/app/controllers/games_controller.rb:
+    D:/rsf/app/controllers/games_controller.rb:
     - 
     - 1
     - 1
@@ -2180,13 +2195,13 @@ RSpec:
     - 1
     - 
     - 
-    C:/rsf/app/controllers/home_controller.rb:
+    D:/rsf/app/controllers/home_controller.rb:
     - 1
     - 1
     - 
     - 
     - 
-    C:/rsf/app/controllers/login_controller.rb:
+    D:/rsf/app/controllers/login_controller.rb:
     - 
     - 1
     - 1
@@ -2214,7 +2229,7 @@ RSpec:
     - 0
     - 
     - 
-    C:/rsf/app/controllers/users_controller.rb:
+    D:/rsf/app/controllers/users_controller.rb:
     - 
     - 1
     - 1
@@ -2300,17 +2315,120 @@ RSpec:
     - 
     - 0
     - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/spec/fast/active_record_spec_helper.rb:
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 7
+    - 7
+    - 7
+    - 
+    - 
+    - 
+    - 
+    - 
     - 
+    D:/rsf/spec/controllers/test_spec.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    D:/rsf/spec/fast/test_fast_spec.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 2
+    - 
+    - 1
+    - 2
+    - 2
+    - 1
+    - 
+    - 
+    D:/rsf/spec/fast/users_spec.rb:
+    - 1
+    - 
+    - 1
     - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/spec/models/admin_user_spec.rb:
+    - 1
     - 
+    - 1
+    - 
+    - 
+    D:/rsf/spec/models/users_spec.rb:
+    - 1
     - 
+    - 1
+    - 1
+    - 1
     - 
     - 
-  :created_at: 2013-01-17 16:56:51.382611000 +04:00
+  :created_at: 2013-01-31 04:16:16.527038000 +04:00
 ! 'C:/RailsInstaller/Ruby1.9.3/bin/rspec ':
   :original_result:
     C:/rsf/config/environment.rb:
     - 
+    - 
+    - 
     - 1
     - 
     - 
@@ -3113,9 +3231,10 @@ RSpec:
     - 1
     - 1
     - 1
-    - 1
     - 0
     - 
+    - 1
+    - 1
     - 
     - 
     C:/rsf/lib/user_extensions.rb:
@@ -3462,6 +3581,42 @@ RSpec:
     - 
     - 
     - 
+    C:/rsf/spec/fast/active_record_spec_helper.rb:
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 7
+    - 7
+    - 7
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     C:/rsf/spec/controllers/test_spec.rb:
     - 1
     - 
@@ -3489,6 +3644,30 @@ RSpec:
     - 1
     - 
     - 
+    C:/rsf/spec/fast/users_spec.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
     C:/rsf/spec/models/admin_user_spec.rb:
     - 1
     - 
@@ -3503,4 +3682,1266 @@ RSpec:
     - 1
     - 
     - 
-  :created_at: 2013-01-17 21:25:14.508459000 +04:00
+  :created_at: 2013-01-19 18:04:51.441912000 +04:00
+! 'D:/Coding/Ruby193/bin/rspec ':
+  :original_result:
+    D:/rsf/config/environment.rb:
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    D:/rsf/config/application.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    D:/rsf/config/boot.rb:
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    D:/rsf/config/environments/test.rb:
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    D:/rsf/config/initializers/active_admin.rb:
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/backtrace_silencers.rb:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/devise.rb:
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/inflections.rb:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/mime_types.rb:
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/secret_token.rb:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    D:/rsf/config/initializers/session_store.rb:
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/config/initializers/wrap_parameters.rb:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    D:/rsf/config/routes.rb:
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/app/controllers/application_controller.rb:
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    D:/rsf/app/helpers/application_helper.rb:
+    - 1
+    - 
+    D:/rsf/app/helpers/games_helper.rb:
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 
+    D:/rsf/app/helpers/home_helper.rb:
+    - 1
+    - 
+    D:/rsf/app/helpers/login_helper.rb:
+    - 1
+    - 
+    D:/rsf/app/helpers/users_helper.rb:
+    - 1
+    - 
+    - 
+    D:/rsf/app/admin/admin_user.rb:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    D:/rsf/app/models/admin_user.rb:
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    D:/rsf/app/admin/dashboard.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/app/admin/games.rb:
+    - 1
+    - 
+    - 
+    D:/rsf/app/models/game.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 0
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    D:/rsf/app/admin/users.rb:
+    - 1
+    - 
+    - 
+    D:/rsf/app/models/user.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    D:/rsf/lib/user_extensions.rb:
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    D:/rsf/app/controllers/games_controller.rb:
+    - 
+    - 1
+    - 1
+    - 0
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    D:/rsf/app/controllers/home_controller.rb:
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    D:/rsf/app/controllers/login_controller.rb:
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    D:/rsf/app/controllers/users_controller.rb:
+    - 
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/spec/fast/active_record_spec_helper.rb:
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 7
+    - 7
+    - 7
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/spec/controllers/test_spec.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    D:/rsf/spec/fast/test_fast_spec.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 2
+    - 
+    - 1
+    - 2
+    - 2
+    - 1
+    - 
+    - 
+    D:/rsf/spec/fast/users_spec.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    D:/rsf/spec/models/admin_user_spec.rb:
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    D:/rsf/spec/models/users_spec.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+  :created_at: 2013-01-31 04:23:17.914140000 +04:00

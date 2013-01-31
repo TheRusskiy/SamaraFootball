@@ -1,11 +1,29 @@
 source 'https://rubygems.org'
-
 gem 'rails', '3.2.11'
-#https://github.com/gregbell/active_admin
-gem 'activeadmin' #rails generate active_admin:install
-gem "meta_search",    '>= 1.1.0.pre'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+#https://github.com/gregbell/active_admin
+gem 'activeadmin' #rails generate active_admin:install
+
+gem "meta_search",    '>= 1.1.0.pre'
+
+#gem 'faster_require' # installation:
+#https://github.com/rdp/faster_require
+# gem install faster_require
+# gem which faster_require
+# cd *rails app*
+# cd lib
+# gem unpack faster_require
+# in environment.rb:
+# require File.dirname(__FILE__) + "/../lib/faster_require-0.9.3/lib/faster_require"
+# make sure you have the right version in upper sentence
+# _______________________________
+# How to use generally/globally:
+# gem which rubygems
+# gem which faster_require
+# rubygems.rb at the top:
+# require 'd:/Ruby192/lib/ruby/gems/1.9.1/gems/faster_require-0.6.0/lib/faster_require.rb'
 
 
 
