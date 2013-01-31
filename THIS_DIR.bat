@@ -1,3 +1,0 @@
-c:
-cd rsf
-cmd
