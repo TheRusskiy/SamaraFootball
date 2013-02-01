@@ -1,0 +1,10 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  validations:
+    price_below_zero: "Price can't be below zero!"
+    no_place: "Where you gonna play? Specify place!"
+    past_time: "Are you a time traveller? Check date!"
+  view:
+    login_request: "Чтобы организовывать матчи нужно войти под своим логином!"
