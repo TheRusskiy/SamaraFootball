@@ -14,6 +14,10 @@ class Game < ActiveRecord::Base
     self.time.hour.to_s+":"+self.time.min.to_s
   end
 
+  def creator_user(id)
+    Game.find(id)
+  end
+
   def expired?
     !!(date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset)))
   end

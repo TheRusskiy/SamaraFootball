@@ -2,6 +2,7 @@ require "./lib/user_extensions.rb"
 class User < ActiveRecord::Base
   attr_accessible :first_name, :last_name, :login, :password
   has_and_belongs_to_many :games
+  has_one :profile
   public
 
   def self.authenticate(login, password)

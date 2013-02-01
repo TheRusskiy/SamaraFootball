@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  home_instruction_1: "Приветствую тебя, аноним!"
+  home_instruction_2: "Зарегистрируйся (правый верхний угол)"
+  home_instruction_3: "Войди под своим логином"
+  home_instruction_4: "Баги, отзывы и предложения шли на"
+
+  home_instruction_5: Приветствую тебя, %{username}!
+  home_instruction_6: "Редактируй профиль, нажав на свой никнейм (в правом верхнем углу)"
+  home_instruction_7: "Создай матч / Прими участие в уже созданном"

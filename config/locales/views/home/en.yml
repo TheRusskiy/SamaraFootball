@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  home_instruction_1: "Welcome, anonymous!"
+  home_instruction_2: "Register (top right corner)"
+  home_instruction_3: "Log in with your username"
+  home_instruction_4: "Suggestions, critiques, bugs and hugs send to"
+
+  home_instruction_5: "Welcome, %{username}!"
+  home_instruction_6: "Edit your profile by clicking at your username (top right corner)"
+  home_instruction_7: "Organize a game / take part in already created one"

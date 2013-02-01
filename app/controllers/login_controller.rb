@@ -9,12 +9,12 @@ class LoginController < ApplicationController
 
   # "Create" a login, aka "log the user in"
   def create
-    if user=User.authenticate(params[:username], params[:password])
+    if (user=User.authenticate(params[:username], params[:password]))
       session[:current_user_id]=user.id
-      flash[:notice]="Добро пожаловать!"
+      flash[:notice]=t 'login_greeting'
       redirect_to root_path
     else
-      flash[:warning]="Неправильные логин/пароль!"
+      flash[:warning]= t 'login_incorrect'
       redirect_to root_path
     end
   end

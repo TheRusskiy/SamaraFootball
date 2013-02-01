@@ -3,23 +3,23 @@
     <h1>Samara Football</h1>
     <% if current_user.nil? %>
     <!-- Not logged in: -->
-    <h3>Приветствую тебя, аноним!</h3>
+    <h3><%= t 'home_instruction_1' %></h3>
     <p>
       <ol>
-        <li>Зарегистрируйся (правый верхний угол)
-          <li>Войди под своим логином
-            <li>Баги, отзывы и предложения шли на <strong>TheRusskiy@gmail.com</strong>
+        <li><%= t 'home_instruction_2' %>
+          <li><%= t 'home_instruction_3' %>
+            <li><%= t 'home_instruction_4' %> <strong>TheRusskiy@gmail.com</strong>
       </ol>
     </p>
 
     <% else %>
     <!-- Logged in: -->
-    <h3>Приветствую тебя, <%= current_user.first_name  %>!</h3>
+    <h3><%= t 'home_instruction_5', :username => current_user.first_name %></h3>
     <p>
       <ol>
-        <li>Редактируй профиль, нажав на свой никнейм (в правом верхнем углу)
-          <li>Создай матч / Прими участие в уже созданном
-            <li>Баги, отзывы и предложения шли на <strong>TheRusskiy@gmail.com</strong>
+        <li><%= t 'home_instruction_6' %>
+          <li><%= t 'home_instruction_7' %>
+            <li><%= t 'home_instruction_4' %> <strong>TheRusskiy@gmail.com</strong>
       </ol>
     </p>
     <% end %>     

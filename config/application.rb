@@ -56,6 +56,10 @@ module SamaraFootball
     # parameters by using an attr_accessible or attr_protected declaration.
     # config.active_record.whitelist_attributes = true
 
+    config.assets.compress=true
+    config.assets.css_compressor = :yui
+    config.assets.js_compressor = :uglifier
+
     # Enable the asset pipeline
     config.assets.enabled = true
 
