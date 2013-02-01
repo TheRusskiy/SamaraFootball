@@ -7,7 +7,6 @@ gem 'rails', '3.2.11'
 gem 'activeadmin' #rails generate active_admin:install
 
 gem 'meta_search',    '>= 1.1.0.pre'
-gem 'yui-compressor'
 
 #gem 'faster_require' # installation:
 #https://github.com/rdp/faster_require
@@ -78,6 +77,7 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'yui-compressor'
 end
 
 gem 'jquery-rails'
