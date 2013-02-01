@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  game_date: "Date"
+  game_time: "Time"
+  game_place: "Place"
+  game_place_placeholder: "e.g. Torpedo"
+  game_price: "Price"
+  game_submit: "Let there be football!"
+  game_players: "Players"
+  game_details: "Details"
+  game_will_come: "I'm coming!"
+  game_wont_come: "Change my mind, I won't come. I love cocks btw!"
+  game_edit_button: "Edit"
+  game_delete_button: "Cancel game"

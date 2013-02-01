@@ -1,6 +1,6 @@
 class Game < ActiveRecord::Base
   include ActionView::Helpers
-  attr_accessible :date, :place, :price, :time
+  attr_accessible :date, :place, :price, :time, :creator
   has_and_belongs_to_many :users
   validate :price_validation
   validate :date_validation
@@ -12,6 +12,10 @@ class Game < ActiveRecord::Base
   end
   def time_string
     self.time.hour.to_s+":"+self.time.min.to_s
+  end
+
+  def expired?
+    !!(date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset)))
   end
 
   private
@@ -28,9 +32,10 @@ class Game < ActiveRecord::Base
   end
 
   def date_validation
-    if date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset))
+    if expired?
       errors.add(:date, (t 'validations.past_time'))
     end
   end
+
 
 end

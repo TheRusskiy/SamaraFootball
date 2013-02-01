@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  game_date: "Дата"
+  game_time: "Время проведения"
+  game_place: "Место"
+  game_place_placeholder: "например Торпедо"
+  game_price: "Стоимость"
+  game_submit: "Да будет футбол!"
+  game_players: "Участники"
+  game_details: "Подробности"
+  game_will_come: "Приду!"
+  game_wont_come: "Не приду!"
+  game_edit_button: "Редактировать"
+  game_delete_button: "Отменить игру"
+

@@ -5,14 +5,14 @@
   <!--REGISTER FOR A GAME BUTTON:-->
   <% if can_register?(@game, current_user)%>
   <%= form_tag(register_for_a_game_path(@game.id, current_user.id), :method => 'post') do%>
-    <%= submit_tag 'Приду!', :class => "btn btn-success" %>
+    <%= submit_tag (t 'game_will_come'), :class => "btn btn-success" %>
     </form>
   <% end %>
   <% end %>
   <!--UNREGISTER FROM A GAME BUTTON:-->
   <% if can_unregister?(@game, current_user)%>
   <%= form_tag(unregister_from_a_game_path(@game.id, current_user.id), :method => 'delete') do%>
-    <%= submit_tag 'Не приду!', :class => "btn btn-danger" %>
+    <%= submit_tag (t 'game_wont_come'), :class => "btn btn-danger" %>
     </form>
   <% end %>
   <% end %>
@@ -23,13 +23,13 @@
 
     <!-- Edit -->
     <%= form_tag(edit_game_path(@game), :method => 'get') do%>
-      <%= submit_tag 'Редактировать', :class => "btn btn-warning" %>
+      <%= submit_tag (t 'game_edit_button'), :class => "btn btn-warning" %>
       <!--</form>-->
     <% end %>
 
     <!-- Delete -->
     <%= form_tag(game_path(@game), :method => 'delete') do%>
-      <%= submit_tag 'Удалить', :confirm => "Уверен?", :class => "btn btn-danger" %>
+      <%= submit_tag (t 'game_delete_button'), :confirm => (t 'are_you_sure'), :class => "btn btn-danger" %>
       <!--</form>-->
     <% end %>
 

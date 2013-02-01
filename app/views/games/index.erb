@@ -2,23 +2,23 @@
   <table id="game_table" class="table table-striped table-hover pull-left table-bordered mid-table">
   <tr>
   <th>№</th>
-  <th>Дата</th>
-  <th>Место</th>
-  <th>Стоимость</th>
-  <th>Время</th>
-  <th>Участники</th>
+  <th><%= t 'game_date' %></th>
+  <th><%= t 'game_place' %></th>
+  <th><%= t 'game_price' %></th>
+  <th><%= t 'game_time' %></th>
+  <th><%= t 'game_players' %></th>
   <th></th>
   </tr>
   <% index=0; @games.each do |u| %>
-      <tr>
+      <tr class="<%=game_expiration_class(u) %>">
       <%  index=index+1 %>
       <td><%= index %></td>
-      <td class="date_row"><%= u.date %></td>
-      <td class="place_row"><%= u.place %></td>
-      <td class="price_row"><%= u.price %></td>
-      <td class="time_row"><%= u.time_string %></td>
+      <td ><%= u.date %></td>
+      <td ><%= u.place %></td>
+      <td ><%= u.price %></td>
+      <td ><%= u.time_string %></td>
       <td ><%= u.users.count %></td>
-      <td class="time_row"><%= button_to "Подробности", game_path(u), :class=>"btn btn-small btn-inverse", :method=>"get" %></td>
+      <td ><%= button_to (t 'game_details'), game_path(u), :class=>"btn btn-small btn-inverse", :method=>"get" %></td>
       </tr>
   <% end %>
    </table>

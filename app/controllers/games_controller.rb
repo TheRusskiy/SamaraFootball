@@ -74,8 +74,8 @@ class GamesController < ApplicationController
    end
 
    def update
-     game_owner_validation!
      @game = Game.find(params[:id])
+     game_owner_validation!
      if @game.update_attributes(params[:game])
        flash[:notice]=t 'game_updated', :game=> @game.to_s
        redirect_to game_path(@game.id)
@@ -126,7 +126,7 @@ class GamesController < ApplicationController
   end
 
   def game_owner_validation!
-    if (current_user.nil? or current_user.id!=@game.creator)
+    if current_user.nil? or current_user.id!=@game.creator
       flash[:warning]=t 'not_game_owner'
       redirect_to root_path
     end
@@ -141,6 +141,9 @@ class GamesController < ApplicationController
         return false
       end
     end
+    if game.expired?
+      return false
+    end
     return true
   end
 
@@ -148,7 +151,9 @@ class GamesController < ApplicationController
     if user.nil?
       return false
     end
-
+    if game.expired?
+      return false
+    end
     game.users.each do |u|
       if u.login==user.login
         return true
