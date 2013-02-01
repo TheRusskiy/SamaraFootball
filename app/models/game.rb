@@ -1,7 +1,7 @@
 class Game < ActiveRecord::Base
   include ActionView::Helpers
   attr_accessible :date, :place, :price, :time, :creator
-  has_and_belongs_to_many :users
+  has_and_belongs_to_many :users, :order => 'games_users.id'
   validate :price_validation
   validate :date_validation
   validate :place_validation
@@ -16,6 +16,10 @@ class Game < ActiveRecord::Base
 
   def expired?
     !!(date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset)))
+  end
+
+  def register_user(user)
+    users << user
   end
 
   private

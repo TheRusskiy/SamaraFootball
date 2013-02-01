@@ -15,23 +15,6 @@ class GamesController < ApplicationController
 
    def create
      @game = Game.new(params[:game])
-     #if @game.price<0
-     #  flash[:warning]="Цена не может быть < 0, спустись на землю!"
-     #  render new_game_path
-     #  return
-     #end
-     #if @game.place=="" or @game.place.nil?
-     #  flash[:warning]="Играть то где будем? Укажи место!"
-     #  render new_game_path
-     #  return
-     #end
-     #
-     #if @game.date<Date.today or (@game.date==Date.today&&@game.time<(Time.now.getutc+Time.now.utc_offset))
-     #  flash[:warning]="Нельзя создать игру в прошлом!"
-     #  render new_game_path
-     #  return
-     #end
-
     if current_user.nil?
       flash[:warning]=t 'login_request'
       redirect_to login_form_path
@@ -39,7 +22,6 @@ class GamesController < ApplicationController
     else
      @game[:creator]=current_user.id
     end
-
 
      if @game.save
        flash[:notice]=t 'game_created', :game => @game.to_s
@@ -89,7 +71,7 @@ class GamesController < ApplicationController
     @user = User.find(params[:user_id])
     @game = Game.find(params[:game_id])
     permission_to_register!(@user, @game)
-    @game.users << @user
+    @game.register_user(@user)
     if @game.save!
       flash[:notice]=t 'game_registration_success'
       redirect_to game_path(@game.id)

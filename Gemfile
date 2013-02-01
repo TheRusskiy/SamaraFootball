@@ -41,6 +41,7 @@ group :test do
 end
 
 group :test, :development do
+  gem 'awesome_print'
   gem 'database_cleaner'
   gem 'launchy'  
   gem "rspec-rails",        :git => "git://github.com/rspec/rspec-rails.git"
