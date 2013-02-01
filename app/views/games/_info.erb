@@ -1,11 +1,11 @@
 <dl class="dl-horizontal common-text">
-  <dt>Дата:</dt>
+  <dt><%= (t 'game_date') %>:</dt>
   <dd><%= @game.date %></dd>
-  <dt>Время:</dt>
-  <dd><%= @game.time_string %></dd>
-  <dt>Место:</dt>
-  <dd><%= @game.place %></dd>
-  <dt>Стоимость:</dt>
+  <dt><%= (t 'game_time') %>:</dt>
+  <dd><%= @game.time_string %>:</dd>
+  <dt><%= (t 'game_place') %>:</dt>
+  <dd><%= @game.place %>:</dd>
+  <dt><%= (t 'game_price') %>:</dt>
   <dd><%= @game.price %></dd>
 </dl>
 <!--<script>$("#new_game_date_input").mask("99/99/9999")</script>-->
