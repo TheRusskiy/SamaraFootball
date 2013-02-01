@@ -31,6 +31,8 @@ module SamaraFootball
 
     config.time_zone = 'Europe/Moscow'
 
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+
     
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.

@@ -5,40 +5,32 @@
   <!--REGISTER FOR A GAME BUTTON:-->
   <% if can_register?(@game, current_user)%>
   <%= form_tag(register_for_a_game_path(@game.id, current_user.id), :method => 'post') do%>
-    <%= hidden_field(:user, :login, :value => current_user.login) %>
-    <%= hidden_field(:user, :password, :value => current_user.password) %>
-    <%= submit_tag 'Прийду!', :class => "btn btn-success" %>
+    <%= submit_tag 'Приду!', :class => "btn btn-success" %>
     </form>
   <% end %>
   <% end %>
   <!--UNREGISTER FROM A GAME BUTTON:-->
   <% if can_unregister?(@game, current_user)%>
   <%= form_tag(unregister_from_a_game_path(@game.id, current_user.id), :method => 'delete') do%>
-    <%= hidden_field(:user, :login, :value => current_user.login) %>
-    <%= hidden_field(:user, :password, :value => current_user.password) %>
-    <%= submit_tag 'Не прийду!', :class => "btn btn-danger" %>
+    <%= submit_tag 'Не приду!', :class => "btn btn-danger" %>
     </form>
   <% end %>
   <% end %>
   <!-- Only creator can edit and delete -->
   <% if current_user.id==@game.creator  %>
 
-    <ul class="nav pull-left">
+    <!--<ul class="nav pull-left">-->
 
     <!-- Edit -->
     <%= form_tag(edit_game_path(@game), :method => 'get') do%>
-      <%= hidden_field(:user, :login, :value => current_user.login) %>
-      <%= hidden_field(:user, :password, :value => current_user.password) %>
       <%= submit_tag 'Редактировать', :class => "btn btn-warning" %>
-      </form>
+      <!--</form>-->
     <% end %>
 
     <!-- Delete -->
     <%= form_tag(game_path(@game), :method => 'delete') do%>
-      <%= hidden_field(:user, :login, :value => current_user.login) %>
-      <%= hidden_field(:user, :password, :value => current_user.password) %>
       <%= submit_tag 'Удалить', :confirm => "Уверен?", :class => "btn btn-danger" %>
-      </form>
+      <!--</form>-->
     <% end %>
 
   <% end %>

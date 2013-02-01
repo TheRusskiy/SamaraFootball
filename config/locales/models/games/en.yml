@@ -6,5 +6,3 @@ en:
     price_below_zero: "Price can't be below zero!"
     no_place: "Where you gonna play? Specify place!"
     past_time: "Are you a time traveller? Check date!"
-  view:
-    login_request: "Чтобы организовывать матчи нужно войти под своим логином!"

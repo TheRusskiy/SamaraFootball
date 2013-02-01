@@ -2,9 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  validations:
-    price_below_zero: "Price can't be below zero!"
-    no_place: "Where you gonna play? Specify place!"
-    past_time: "Are you a time traveller? Check date!"
-  view:
-    login_request: "Чтобы организовывать матчи нужно войти под своим логином!"
+  login_request: "You have to be logged in in order to organize games!"
+  game_created: "%{game} was created... May the ball be with you!"
+  not_game_owner: "Only allowed to game creator. Make your own game, with blackjack and..."
+  game_deleted: "%{game} was cancelled. Hope your lazy ass feels content!"
+  game_updated: "%{game} was edited!"
+  no_such_user_id: "This is not the user you are looking for!"
+  no_rights_to_register_user: "You are not allowed to register this user!"
+  can_not_register: "You can't register for this game!"
+  game_registration_success: "Do come!"
+  game_registration_failure: "ErrO_or!"
+  game_unregistration_success: "Forever alone..."

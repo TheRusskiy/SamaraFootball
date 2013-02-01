@@ -1,9 +1,9 @@
 # coding: utf-8
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  before_filter :set_locale
   #before_filter :assign_user
   #before_filter :require_login
-
   #Get user info
   def assign_user
     if @_current_user.nil?
@@ -16,6 +16,11 @@ class ApplicationController < ActionController::Base
   def current_user
     @_current_user ||= session[:current_user_id]&&
         User.find(session[:current_user_id])
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+    I18n.locale="ru"
   end
 
   helper_method :current_user

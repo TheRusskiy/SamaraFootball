@@ -2,9 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 ru:
-  validations:
-    price_below_zero: "Отрицательная цена? Спустись на Землю!"
-    no_place: "Играть то где будем? Укажи место!"
-    past_time: "Назад в будущее? Укажи не истёкшее время!"
-  view:
-    login_request: "Чтобы организовывать матчи нужно войти под своим логином!"
+  login_request: "Чтобы организовывать матчи нужно войти под своим логином!"
+  game_created: "%{game} была создана... May the ball be with you!"
+  not_game_owner: "Это может только организатор. Организуй свой матч, с блекджеком и..."
+  game_deleted: "%{game} была отменена. Сиди дома, суч!"
+  game_updated: "%{game} была отредактирована!"
+  no_such_user_id: "Это не тот пользователь которого вы ищете!"
+  no_rights_to_register_user: "У вас нет прав регистрировать пользователя!"
+  can_not_register: "Вы не можете зарегизасрироваться на игру!"
+  game_registration_success: "Приходи, ждём!"
+  game_registration_failure: "Ошибко О_о!"
+  game_unregistration_success: "Не особо тебя и ждали..."

@@ -3,7 +3,7 @@
 
 <div class="field">
   <%= f.label "Дата" %><br />
-  <%= f.date_select :date, :discard_year=> true, :value => @game.date %>
+  <%= f.date_select "date", :discard_year=> true, :value => @game.date %>
 </div>
 <div class="field">
 <%= f.label "Время проведения" %><br />
@@ -18,7 +18,7 @@
 <%= f.number_field :price, :min => 0, :max => 10000, :value => 0, :step =>50, :value => @game.price||0%>
 </div>
 <div class="actions">
-  <%= f.submit "Создать матч", :confirm => "Проверь дважды!", :action=>games_path, :method =>"post", :class => 'btn btn-success'%>
+  <%= f.submit "Да будет футбол!", :confirm => "Проверь дважды!", :action=>games_path, :method =>"post", :class => 'btn btn-success'%>
 </div>
     <%= f.hidden_field :login, :name=> "user[login]", :value => current_user.login %>
     <%= f.hidden_field :password, :name=> "user[password]", :value => current_user.password %>
