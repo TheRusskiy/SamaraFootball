@@ -3,5 +3,14 @@
 
 en:
   user_first_name: "First name"
+  user_first_name_placeholder: "e.g. Johnny"
   user_last_name: "Last name"
+  user_last_name_placeholder: "e.g. Blade"
   user_position: "Position"
+  user_position_placeholder: "e.g. Striker"
+  user_login: "Username"
+  user_login_placeholder: "e.g. MyLogin69"
+  user_password: "Password"
+  user_password_placeholder: "e.g. keyphrase69"
+  user_submit: "Submit"
+  user_confirmation: "Check twice!"

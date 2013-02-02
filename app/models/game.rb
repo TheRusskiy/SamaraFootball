@@ -19,7 +19,8 @@ class Game < ActiveRecord::Base
   end
 
   def expired?
-    !!(date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset)))
+    #!!(date<Date.today or (date==Date.today&&time<(Time.now.getutc+Time.now.utc_offset)))
+    !!(date<Date.today or (date==Date.today&&time.hour<(Time.now.getutc+Time.now.utc_offset).hour))
   end
 
   def register_user(user)
@@ -40,7 +41,8 @@ class Game < ActiveRecord::Base
   end
 
   def date_validation
-    if expired?
+    debugger
+    if self.expired?
       errors.add(:date, (t 'validations.past_time'))
     end
   end

@@ -1,31 +1,33 @@
 
 <%= form_for(@user) do |f| %>
 
-<div class="field">
-  <%= f.label :login %><br />
-  <%= f.text_field :login, :placeholder => "e.g. MyLogin69", :value => @user.login%>
+<div class="field control-group info">
+  <%= f.label (t 'user_login') %><br />
+  <%= f.text_field :login, :placeholder => (t 'user_login_placeholder'), :value => @user.login%>
+</div>
+<div class="field control-group info">
+  <%= f.label (t 'user_password') %><br />
+  <%= f.text_field :password, :type => :password, :placeholder => (t 'user_password_placeholder') ,:value => @user.password%>
 </div>
 <div class="field">
-  <%= f.label "Пароль" %><br />
-  <%= f.text_field :password, :type => :password, :placeholder => "password" ,:value => @user.password%>
+<%= f.label (t 'user_first_name') %><br />
+<%= f.text_field :first_name,  :placeholder => (t 'user_first_name_placeholder'), :value => @user.first_name%>
 </div>
 <div class="field">
-<%= f.label "Имя" %><br />
-<%= f.text_field :first_name,  :placeholder => "e.g. Dmitry", :value => @user.first_name%>
+<%= f.label (t 'user_last_name') %><br />
+<%= f.text_field :last_name,  :placeholder => (t 'user_last_name_placeholder'), :value => @user.last_name%>
 </div>
 <div class="field">
-<%= f.label "Фамилия" %><br />
-<%= f.text_field :last_name,  :placeholder => "e.g. Ishkov", :value => @user.last_name%>
-</div>
-<div class="field">
-<%= f.label "Позиция" %><br />
-<%= f.text_field :position,  :placeholder => "e.g. goalkeeper", :value => @user.position%>
+<%= f.label (t 'user_position') %><br />
+<%= f.text_field :position,  :placeholder => (t 'user_position_placeholder'), :value => @user.position%>
 </div>
 <div class="actions">
-  <%= f.submit "Подтвердить", :confirm => "Проверь дважды!", :action=>users_path, :method =>"post", :class => 'btn btn-primary'%>
+  <%= f.submit (t 'user_submit'), :confirm => (t 'user_confirmation'), :action=>users_path, :method =>"post", :class => 'btn btn-primary'%>
 </div>
     <% if not current_user.nil?  %>
     <%= f.hidden_field :login, :name=> "login", :value => current_user.login %>
     <%= f.hidden_field :password, :name=> "password", :value => current_user.password %>
     <% end %>
 <% end %>
+<!--todo form_for(@profile)-->
+

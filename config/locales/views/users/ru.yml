@@ -3,5 +3,14 @@
 
 ru:
   user_first_name: "Имя"
-  user_last_name: "Фамимлия"
+  user_first_name_placeholder: "например Ананий"
+  user_last_name: "Фамилия"
+  user_last_name_placeholder: "например Иванов"
   user_position: "Позиция"
+  user_position_placeholder: "например Нападающий"
+  user_login: "Логин"
+  user_login_placeholder: "например MyLogin69"
+  user_password: "Пароль"
+  user_password_placeholder: "Например password"
+  user_submit: "Подтвердить"
+  user_confirmation: "Проверь дважды!"

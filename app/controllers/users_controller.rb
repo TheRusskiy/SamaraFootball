@@ -10,6 +10,14 @@ class UsersController < ApplicationController
   end
 
   def create
+    #new_user = User.new(params[:user])
+    #todo: validate in model
+    #todo: localize model+controller
+    #todo: move stuff to profile
+    #todo: ensure everything in profile by temporary deleting user fields
+
+
+
     #Check if login available
     existing_user = User.find_by_login(params[:user][:login])
     #Login is unavailable! :-(
